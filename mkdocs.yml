@@ -1,11 +1,12 @@
 # Project information
-site_name:  PDSA
+site_name:  MAD1
 # defeine TOC or order of website-
 nav:
   - Home: index.md
-  - test.md
-  - pdf: 
-      - pdf/embeding.md
+  - week1:
+    - week1/lec_silde.md
+  - week2:
+    - week2/lec_silde.md
 site_author: PK 
 site_description: >- 
   DESCRIPTION
