@@ -1,5 +1,5 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
-from shared.functions import  load_pdf_from_file
+from functions import  load_pdf_from_file
 
 def summarize(file_path , context_base = "summarize the following text" ):
     """_summary_

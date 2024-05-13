@@ -4,7 +4,6 @@ site_name:  MAD1
 nav:
   - Home: index.md
   - week1:
-    - week1/lec_slide.md
     - week1/pq_session.md
     - week1/week_activity1.md
   - week2:
