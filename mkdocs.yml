@@ -2,6 +2,8 @@ site_name: MAD1
 nav:
 - Home:
   - index.md
+  - Flask.md
+  - css.md
 - week3:
   - week3/Week 3_annotated.md
   - week3/Accessibilty.md
@@ -10,10 +12,13 @@ nav:
   - week1/pq_session.md
   - week1/Week 1_annotated.md
   - week1/week_activity1.md
+- arifacts:
+  - arifacts/1.md
+  - arifacts/viva.md
 - week2:
   - week2/Week 2_annotated.md
-- pdf:
-  - pdf/embeding.md
+- reference:
+  - reference/embeding.md
 site_author: PK
 site_description: DESCRIPTION
 repo_name: pk1308/MAD1
