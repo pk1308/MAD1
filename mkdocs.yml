@@ -16,7 +16,10 @@ nav:
   - arifacts/1.md
   - arifacts/viva.md
 - week2:
+  - week2/aq_pq.md
   - week2/Week 2_annotated.md
+- week4:
+  - week4/Week 4_annotated.md
 - reference:
   - reference/embeding.md
 site_author: PK

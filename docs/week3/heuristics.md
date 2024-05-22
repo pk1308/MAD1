@@ -1,5 +1,7 @@
 # **Nielsen Norman Group's Ten Usability Heuristics**
 
+---
+
 Usability plays a crucial role in the success of digital products, whether it's a website, mobile app, or software application. To ensure that products are intuitive, efficient, and enjoyable to use, designers and developers can turn to established principles like the Ten Usability Heuristics developed by Jakob Nielsen and Rolf Molich of the Nielsen Norman Group.
 
 1. **Visibility of system status**: Users should always be informed about what's happening within the system. Clear and timely feedback lets users know if their actions are producing the desired results.
