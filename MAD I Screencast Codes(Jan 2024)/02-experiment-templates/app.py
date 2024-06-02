@@ -40,6 +40,6 @@ TEMPLATE ="""
 
 template = Template(TEMPLATE)
 print(template.render(janapith_data=janapith_data))
-my_html_document_file = open('janapith.html', 'w')
+my_html_document_file = open('janapith.html', 'w' , encoding='Utf-8')
 my_html_document_file.write(template.render(janapith_data=janapith_data))
 my_html_document_file.close()
