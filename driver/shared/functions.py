@@ -154,7 +154,7 @@ def update_my_docs(folder_path="./docs"):
 
 
 
-def summarize(file_path , context_base = "summarize the following text" ):
+def summarize(file_path , context_base = "summarize the following not less than 5000 words lec slide" ):
     """_summary_
 
     Args:
@@ -164,10 +164,10 @@ def summarize(file_path , context_base = "summarize the following text" ):
         _type_: _description_
     """
     pages = load_pdf_from_file(file_path=file_path)
-
+    logger.info(f"loaded {file_path}")
     # Setup the Google Generative AI model and invoke it using a human-friendly prompt
     llm = ChatGoogleGenerativeAI(model="gemini-pro")
-    result = llm.invoke(f"{context_base}: \n {pages}:")
+    result = llm.invoke(f"{context_base}: \n {pages}")
 
     return result.content
 def create_md(files_to_create):

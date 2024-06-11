@@ -2,36 +2,60 @@
 **Summary**
 **Information Representation**
 
-* Computers process only binary digits (bits) as 0s and 1s.
-* Numbers are represented using place value or two's complement for negative values.
-* Text characters are represented as bit sequences.
+Computers work only with binary digits (bits). They can represent:
 
-**Character Encodings**
+* **Numbers**: Using place value
+* **Letters**: Using character encoding
 
-* ASCII: 7-bit encoding for basic English characters.
-* Unicode: Expanded encoding for various languages and symbols.
-* UTF-8: Variable-length encoding based on Unicode, efficient for most common languages.
+**Character Encoding**
+
+Character encoding translates characters into sequences of bits. Common encodings include:
+
+* **ASCII**: 7-bit encoding for English characters and common symbols
+* **Unicode**: Universal Character Set encoding that supports a vast range of characters from different languages
+* **UTF-8**: Variable-length encoding that is efficient for most languages
 
 **Markup**
 
-* Markup distinguishes content from meaning.
-* Presentational markup focuses on styling (e.g., **bold**, <font>).
-* Procedural markup provides instructions for display (e.g., change font size).
-* Descriptive markup indicates structural elements (e.g., <title>, <heading>).
+Markup languages add meaning and structure to text without directly formatting it. Types of markup include:
 
-**HTML**
+* **Presentational**: Dictates how content should appear (e.g., WYSIWYG editors)
+* **Procedural**: Provides instructions for display (e.g., changing font size)
+* **Descriptive**: Defines the semantic structure of content (e.g., headings, paragraphs)
 
-* HyperText Markup Language used for web documents.
-* Tags indicate document structure and content (e.g., <html>, <h1>).
-* HTML5 introduces new elements and multimedia support.
-* Document Object Model (DOM) represents the logical structure of an HTML document.
+**HTML (HyperText Markup Language)**
+
+HTML is a semantic markup language used for creating web pages. It uses tags to structure and format content. Examples:
+
+* `<html>`: Defines the start of an HTML document
+* `<body>`: Encloses the main content of the page
+* `<h1>`: Defines a heading
+
+**Document Object Model (DOM)**
+
+The DOM is a tree structure that represents the logical layout of an HTML document. It allows direct manipulation of the document's elements.
 
 **Styling**
 
-* CSS (Cascading Style Sheets) separates presentation from content.
-* CSS rules can be embedded within HTML, defined internally within a <style> element, or loaded externally from a separate file.
-* CSS allows for multiple definitions, with the most recent taking precedence.
-* Responsive design adjusts styling based on device screen size.
+Styling defines the appearance of content. CSS (Cascading Style Sheets) is used to separate styling information from markup. It allows for multiple definitions, with the latest definition taking precedence.
+
+**Types of Styling**
+
+* **Inline CSS**: Styles added directly to tags
+* **Internal CSS**: Styles defined within the `<head>` tag
+* **External CSS**: Styles defined in separate files
+
+**Responsive Design**
+
+CSS can be used to adapt the layout of a web page to different screen sizes, making it mobile and tablet-friendly.
+
+**Bootstrap**
+
+Bootstrap is a popular framework that provides pre-defined styles for common components (e.g., buttons, forms) and promotes mobile-first design.
+
+**Javascript**
+
+Javascript is an interpreted language used to add programmability to web browsers. It is not related to Java.
 **Lec file**
 # Week 2_annotated.pdf (PDF file)
 ![Alt text](<./Week 2_annotated.pdf>){ type=application/pdf style="min-height:100vh;width:100%" }
