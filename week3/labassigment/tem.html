@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ data['title'] }}</title>
+    <meta name="description" content="This page lists Jnanpith Awardees" />
+  </head>
+  <body>
+    <h1>{{ data['heading'] }}</h1>
+
+    {% if data['student_data'] %}
+    <table border="1" style="padding: 1px">
+      <thead>
+        <tr>
+          <th>Student id</th>
+          <th>Course id</th>
+          <th>Marks</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in data['student_data'] %}
+        <tr>
+          <td>{{ row["Student id"] }}</td>
+          <td>{{ row["Course id"] }}</td>
+          <td>{{ row["Marks"] }}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+          <td align="center" colspan="2">Total</td>
+          <td>{{ data["total_marks"] }}</td>
+        </tr>
+      </tbody>
+    </table>
+    {% endif %} {% if data["course_data"] %}
+    <table border="1" style="padding: 1px">
+      <thead>
+        <tr>
+          <th>Average Marks</th>
+          <th>Maximum Marks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{data["course_data"]["average_marks"] }}</td>
+          <td>{{ data["course_data"]["max"] }}</td>
+          <td>{{ row["Marks"] }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <img src="{{ data['plot_path'] }}" alt="Plot" />
+    {% endif %}
+  </body>
+</html>
+<p></p>
