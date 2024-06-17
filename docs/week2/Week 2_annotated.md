@@ -1,61 +1,42 @@
 # Week 2_annotated.pdf (PDF file)
+
 **Summary**
 **Information Representation**
 
-Computers work only with binary digits (bits). They can represent:
+Computers operate solely on "bits," which are binary digits with values of 0 or 1. Numbers can be represented using bit patterns, such as 6 being represented as 0110 in binary. Negative numbers can be represented using the two's complement notation, such as -6 being represented as 1010.
 
-* **Numbers**: Using place value
-* **Letters**: Using character encoding
+Textual information presents a challenge as it consists of arbitrary characters. ASCII is a 7-bit encoding standard that defines codes for common characters such as letters, numbers, and special symbols. However, ASCII is limited to 128 different entities, making it insufficient for representing text in many languages that use non-Latin characters.
 
-**Character Encoding**
+**Unicode and UTF-8**
 
-Character encoding translates characters into sequences of bits. Common encodings include:
+Unicode is a character encoding standard that aims to provide codes for all living and historical languages. It uses UCS (Universal Character Set) encodings, such as UCS-2 (2 bytes per character) and UCS-4 (4 bytes per character), to accommodate a vast number of characters.
 
-* **ASCII**: 7-bit encoding for English characters and common symbols
-* **Unicode**: Universal Character Set encoding that supports a vast range of characters from different languages
-* **UTF-8**: Variable-length encoding that is efficient for most languages
+UTF-8 is a variable-length encoding format for Unicode that uses 8-bit units. It is widely used on the web because it is efficient for representing common characters while also supporting a wide range of languages.
 
-**Markup**
+**Markup vs Style**
 
-Markup languages add meaning and structure to text without directly formatting it. Types of markup include:
-
-* **Presentational**: Dictates how content should appear (e.g., WYSIWYG editors)
-* **Procedural**: Provides instructions for display (e.g., changing font size)
-* **Descriptive**: Defines the semantic structure of content (e.g., headings, paragraphs)
+Markup languages like HTML focus on separating content from its presentation. HTML tags provide semantic meaning to the content, such as indicating a heading (<h1>) or a paragraph (<p>). On the other hand, style sheets like CSS are used to specify the visual presentation of the content, such as font size, color, and layout.
 
 **HTML (HyperText Markup Language)**
 
-HTML is a semantic markup language used for creating web pages. It uses tags to structure and format content. Examples:
-
-* `<html>`: Defines the start of an HTML document
-* `<body>`: Encloses the main content of the page
-* `<h1>`: Defines a heading
+HTML is the predominant markup language for the web. It allows content to be structured using tags, which can be nested to create complex documents. HTML5 introduced new tags and features, such as <header>, <nav>, and <footer>, to enhance the semantic representation of content.
 
 **Document Object Model (DOM)**
 
-The DOM is a tree structure that represents the logical layout of an HTML document. It allows direct manipulation of the document's elements.
+The DOM is a tree-like representation of an HTML document that allows developers to programmatically manipulate the content and structure of the document. Using the DOM, developers can add, remove, or modify elements and their attributes.
 
-**Styling**
+**CSS (Cascading Style Sheets)**
 
-Styling defines the appearance of content. CSS (Cascading Style Sheets) is used to separate styling information from markup. It allows for multiple definitions, with the latest definition taking precedence.
-
-**Types of Styling**
-
-* **Inline CSS**: Styles added directly to tags
-* **Internal CSS**: Styles defined within the `<head>` tag
-* **External CSS**: Styles defined in separate files
+CSS is used to control the presentation of an HTML document. It allows developers to specify the visual appearance of different elements, such as font, color, size, and layout. CSS can be applied inline (within HTML elements), internally (within the <head> tag), or externally (in a separate style sheet).
 
 **Responsive Design**
 
-CSS can be used to adapt the layout of a web page to different screen sizes, making it mobile and tablet-friendly.
+Responsive design is an approach to web design that ensures the website adapts to different screen sizes and form factors, such as desktops, laptops, tablets, and smartphones. By using CSS media queries, developers can define different styles for different screen sizes, ensuring optimal user experience on all devices.
 
 **Bootstrap**
 
-Bootstrap is a popular framework that provides pre-defined styles for common components (e.g., buttons, forms) and promotes mobile-first design.
+Bootstrap is a popular CSS framework that provides pre-built styles and components for common web elements, such as buttons, forms, and navigation bars. It simplifies the development of responsive web designs by offering a consistent and mobile-first approach.
 
-**Javascript**
+**JavaScript**
 
-Javascript is an interpreted language used to add programmability to web browsers. It is not related to Java.
-**Lec file**
-# Week 2_annotated.pdf (PDF file)
-![Alt text](<./Week 2_annotated.pdf>){ type=application/pdf style="min-height:100vh;width:100%" }
+JavaScript is a scripting language that is integrated into the web browser. It allows developers to add interactivity and dynamic behavior to web pages, such as handling user input, manipulating the DOM, and creating animations. JavaScript is essential for enhancing the user experience on the web.

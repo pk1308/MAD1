@@ -1,18 +1,22 @@
 # Week 3_annotated.pdf (PDF file)
+
 **Summary**
 **MVC Paradigm**
 
 The Model-View-Controller (MVC) paradigm is an architectural pattern commonly used in software development, including web application development. It separates the application into three distinct components:
 
 1. **Model:**
+
    - Responsible for managing the application's data and business logic.
    - Stores and processes data, performing operations like saving, updating, and retrieving information.
 
-2. **View:**
+1. **View:**
+
    - Responsible for presenting the data to the user.
    - Contains the user interface (UI) elements and interacts with the user through visual or auditory cues.
 
-3. **Controller:**
+1. **Controller:**
+
    - Acts as a mediator between the model and the view.
    - Handles user input, updates the model accordingly, and triggers changes in the view.
 

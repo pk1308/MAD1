@@ -1,6 +1,6 @@
 Comprehensive HTML cheat sheet
 
-```markdown
+````markdown
 # HTML Cheat Sheet
 
 ## Basic Structure
@@ -15,7 +15,7 @@ Comprehensive HTML cheat sheet
     <!-- Content goes here -->
 </body>
 </html>
-```
+````
 
 ## Document Metadata
 
@@ -291,5 +291,3 @@ Comprehensive HTML cheat sheet
 ```
 
 This cheat sheet covers a broad range of basic and advanced HTML elements and attributes. Feel free to expand it with more specific tags and use cases as needed!
-
-

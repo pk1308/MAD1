@@ -1,6 +1,6 @@
 comprehensive Flask cheat sheet :
 
-```markdown
+````markdown
 # Flask Cheat Sheet
 
 ## Setup
@@ -9,7 +9,7 @@ comprehensive Flask cheat sheet :
 
 ```sh
 pip install Flask
-```
+````
 
 ### Basic Structure
 
@@ -30,7 +30,7 @@ if __name__ == '__main__':
 
 ### Basic Route
 
-```python
+````python
 @app.route('/')
 def home():
     return "Home Page
@@ -41,7 +41,7 @@ def home():
 @app.route('/user/<username>')
 def show_user(username):
     return f"User: {username}"
-```
+````
 
 ### Variable Types
 

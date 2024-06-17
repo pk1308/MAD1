@@ -1,6 +1,6 @@
 comprehensive CSS cheat sheet
 
-```markdown
+````markdown
 # CSS Cheat Sheet
 
 ## Basic Syntax
@@ -9,7 +9,7 @@ comprehensive CSS cheat sheet
 selector {
     property: value;
 }
-```
+````
 
 ## Selectors
 
