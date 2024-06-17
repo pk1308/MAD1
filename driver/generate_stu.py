@@ -1,5 +1,6 @@
 import os
 
+
 def load_gitignore(base_path):
     """
     Load the .gitignore file and return a list of ignored patterns.

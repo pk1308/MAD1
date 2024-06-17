@@ -1,5 +1,7 @@
+import os
+
 import PyPDF2
-import os 
+
 
 def compress_pdf(input_path):
     with open(input_path, 'rb') as input_file:

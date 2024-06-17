@@ -1,20 +1,14 @@
 import os
 import subprocess
-import sys
 from pathlib import Path
-import time
 
 import yaml
 from git import Repo
 from langchain_community.document_loaders import PyPDFium2Loader
 from langchain_google_genai import ChatGoogleGenerativeAI
-from loguru import logger
+from shared.app_log import logger
 
 from .variables import DEFAULT_PDF_URL
-from .compress_file import compress_pdf
-
-logger.remove()
-logger.add(sys.stdout, colorize=True, format="{time} | {level} | {message}")
 
 
 def load_pdf_from_url(url=DEFAULT_PDF_URL):
@@ -193,13 +187,6 @@ def create_md(files_to_create):
                     f.write("**Summary**\n")
                     f.write(data_to_write)
                     f.write("\n")
-                    f.write("**Lec file**\n")
-                    f.write(f"# {os.path.basename(file_to)} (PDF file)\n")
-                    path_ = os.path.basename(file_to)
-                    time.sleep(60)
-                    
-                    data = f"![Alt text](<./{path_}>)" + '{ type=application/pdf style="min-height:100vh;width:100%" }'
-                    f.write(data)
 
             except Exception as e:
                 logger.info(f"Error creating {new_filename}: {e}")
