@@ -162,3 +162,4 @@ cython_debug/
 MAD 1 report.pdf
 
 .trunk/*
+.idea/*

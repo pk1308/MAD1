@@ -56,7 +56,7 @@ class Lab_assignment:
             <head>
                 <meta charset="UTF-8" />
                 <title>{{ data['title'] }}</title>
-                <meta name="description" content="This page lists Jnanpith Awardees" />
+                <meta name="description" content="Lab assignment " />
             </head>
             <body>
                 <h1>{{ data['heading'] }}</h1>

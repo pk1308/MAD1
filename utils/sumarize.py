@@ -11,4 +11,3 @@ if __name__ == "__main__":
     logger.info("converting files to PDF to MD ")
     status = create_md(files_to_create=[sys.argv[1]])
     logger.info(f"converted files to pdf to md  status ; {status} ")
-

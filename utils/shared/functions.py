@@ -36,24 +36,25 @@ def load_pdf_from_file(file_path):
     """
     # Create an instance of PyPDFium2Loader with the file path
     loader = PyPDFium2Loader(file_path)
-    
+
     # Load the PDF document using the loader
     pdf_document = loader.load()
-    
+
     # Return the loaded PDF document
     return pdf_document
 
+
 def get_git_status_files(repo_path_to_update):
     """
-  This function takes the path to a Git repository and returns a list of files 
-  with their paths based on the git status.
+    This function takes the path to a Git repository and returns a list of files
+    with their paths based on the git status.
 
-  Args:
-      repo_path_to_update (str): Path to the Git repository.
+    Args:
+        repo_path_to_update (str): Path to the Git repository.
 
-  Returns:
-      list: List of strings representing file paths.
-  """
+    Returns:
+        list: List of strings representing file paths.
+    """
 
     # Open the Git repository
     repo = Repo(repo_path_to_update)
@@ -86,7 +87,7 @@ def read_yaml_as_dict(path_to_yaml: Path):
         ConfigBox: ConfigBox type
     """
     try:
-        with open(path_to_yaml , encoding="utf-8") as yaml_file:
+        with open(path_to_yaml, encoding="utf-8") as yaml_file:
             content = yaml.safe_load(yaml_file)
             logger.info(f"yaml file: {path_to_yaml} loaded successfully")
             return content
@@ -95,10 +96,10 @@ def read_yaml_as_dict(path_to_yaml: Path):
 
 
 def write_yaml(file_path: Path, data: dict = None):
-    """ write yaml file from dict
+    """write yaml file from dict
 
     Args:
-        file_path (Path):  file path with file name 
+        file_path (Path):  file path with file name
         data (dict, optional): Data to save as yaml
 
     Raises:
@@ -109,7 +110,7 @@ def write_yaml(file_path: Path, data: dict = None):
         os.makedirs(os.path.dirname(file_path), exist_ok=True)
         with open(file_path, "w", encoding="utf-8") as yaml_file:
             if data is not None:
-                 yaml.dump(data, yaml_file , default_flow_style=False, sort_keys=False)
+                yaml.dump(data, yaml_file, default_flow_style=False, sort_keys=False)
     except Exception as e:
         raise e
 
@@ -122,7 +123,7 @@ def update_my_docs(folder_path="./docs"):
     """
     yaml_file = read_yaml_as_dict(Path("mkdocs.yml"))
     markdown_files = []
-    for root, _ , files_to_check in os.walk(folder_path):
+    for root, _, files_to_check in os.walk(folder_path):
         for filename in files_to_check:
             if filename.endswith(".md"):
                 full_path = os.path.join(root, filename)
@@ -141,14 +142,15 @@ def update_my_docs(folder_path="./docs"):
             else:
                 nav_value[key].append(file)
 
-    yaml_file['nav'] = [{key: value} for key, value in nav_value.items()]
+    yaml_file["nav"] = [{key: value} for key, value in nav_value.items()]
 
     file_path = Path(os.path.join(os.getcwd(), "mkdocs.yml"))
     write_yaml(file_path, yaml_file)
 
 
-
-def summarize(file_path , context_base = "summarize the following not less than 5000 words lec slide" ):
+def summarize(
+    file_path, context_base="summarize the following not less than 5000 words lec slide"
+):
     """_summary_
 
     Args:
@@ -164,17 +166,19 @@ def summarize(file_path , context_base = "summarize the following not less than 
     result = llm.invoke(f"{context_base}: \n {pages}")
 
     return result.content
+
+
 def create_md(files_to_create):
     """
-  This function attempts to create Markdown files with information about 
-  provided PDF files.
+    This function attempts to create Markdown files with information about
+    provided PDF files.
 
-  Args:
-      files_to_create (list): List of file paths.
+    Args:
+        files_to_create (list): List of file paths.
 
-  Returns:
-      bool: True if successful, False otherwise.
-  """
+    Returns:
+        bool: True if successful, False otherwise.
+    """
     success = True
     for file_to in files_to_create:
         if file_to.endswith(".pdf"):
@@ -198,13 +202,13 @@ def create_md(files_to_create):
 
 def deploy_mkdocs():
     """
-  This function deploys the MkDocs site using mkdocs gh-deploy.
+    This function deploys the MkDocs site using mkdocs gh-deploy.
 
-  Raises:
-      CalledProcessError: If the subprocess call fails.
-  """
+    Raises:
+        CalledProcessError: If the subprocess call fails.
+    """
     try:
-        subprocess.run(['mkdocs', 'gh-deploy', '-f', './mkdocs.yml'], check=True)
+        subprocess.run(["mkdocs", "gh-deploy", "-f", "./mkdocs.yml"], check=True)
         logger.info("MkDocs site deployed successfully!")
     except subprocess.CalledProcessError as error:
         logger.info(f"Error deploying MkDocs site: {error}")
