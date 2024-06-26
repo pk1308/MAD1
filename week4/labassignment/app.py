@@ -14,8 +14,8 @@ def home():
         id_type = request.form.get('ID')
         id_value = request.form.get('id_value')
         app_run = Lab_assignment3()
-        app_run.run_script(id_type=id_type, id_value=id_value)
-        return render_template("output.html")
+        data_to_tender =  app_run.run_script(id_type=id_type, id_value=id_value)
+        return render_template("output.html" , data =data_to_tender )
 
 @app.route('/static/<path:filename>')
 def static_files(filename):
