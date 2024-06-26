@@ -125,6 +125,7 @@ class Lab_assignment:
             data_to_render["total_marks"] = sum(
                 [d.get("Marks") for d in data_to_render["student_data"]]
             )
+            print(data_to_render)
             self.render_save_file(data=data_to_render, template=template)
         elif c_index == 1 and s_index == -1:
             course_id = sys.argv[c_index + 1]

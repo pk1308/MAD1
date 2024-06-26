@@ -60,6 +60,22 @@ class Lab_assignment3:
     
         return master_data
     
+    def course_get_data(self,course_id=None):
+        course_data = {}
+        data = []
+        for row in self.data["master_data_list"]:
+            if int(row["Course id"]) == int(course_id):
+                data.append(row["Marks"])
+        course_data["average_marks"] = sum(data) / len(data)
+        course_data["max"] = max(data)
+        return course_data, data
+    def student_get_data(self, student_id=None):
+        student_data = []
+        for row in self.data["master_data_list"]:
+            if int(row["Student id"]) == int(student_id):
+                student_data.append(row)
+        return student_data
+
     def render_error(self,):
         data_to_render= {}        
         data_to_render["title"] = "Something Went Wrong"
@@ -73,29 +89,31 @@ class Lab_assignment3:
         data_to_render = {}
         if id_type == "student_id":
             student_id = id_value
-            if student_id in self.data["student_data_list"]:
+            if int(student_id) in self.data["student_data_list"]:
                 
                 data_to_render["title"] = "Student Data"
                 data_to_render["heading"] = "Student Details"
-                student_Data = ""
-                data_to_render["student_data"] = student_Data
-                data_to_render["total_marks"] = sum([d.get("Marks") for d in data_to_render["student_data"]])
+                data_to_render["student_data"] = self.student_get_data(student_id=student_id)
+                data_to_render["total_marks"] =  sum([d.get("Marks") for d in data_to_render["student_data"]])
                 return data_to_render
             else:
-                pass 
+                data_to_render = self.render_error()
+                return data_to_render
             
         elif id_type == "course_id":
             course_id = id_value
-            if course_id in self.data["course_data_list"]:                
+            if int(course_id) in self.data["course_data_list"]:
                 data_to_render["title"] = "Course Data"
                 data_to_render["heading"] = "Course Details"
-                data_to_render["course_data"], data_to_plot = self.get_data(course_id=course_id)          
+                data_to_render["course_data"], data_to_plot = self.course_get_data(course_id=course_id)
                 self.plot_save(data=data_to_plot)
                 return data_to_render
             else:
-                return self.render_error()
+                data_to_render = self.render_error()
+                return data_to_render
         else:
-             return self.render_error()
+            data_to_render = self.render_error()
+            return data_to_render
         return 
 
 if __name__ == "__main__":
