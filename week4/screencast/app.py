@@ -13,4 +13,5 @@ def home():
 
 
 if __name__ == "__main__":
+    # trunk-ignore(bandit/B201)
     app.run(debug=True)
