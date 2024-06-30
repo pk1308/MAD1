@@ -16,12 +16,20 @@ nav:
   - arifacts/1.md
   - arifacts/viva.md
 - week2:
+  - week2/activity_session_.md
   - week2/aq_pq.md
   - week2/Week 2_annotated.md
 - week4:
-  - week4/Week 4_annotated.md
+  - week4/sql.md
+  - week4/Mechanisms for Persistent Storage and Relational Databases.md
+  - week4/Presistent Storage.md
+  - week4/Relations and ER Diagram.md
 - reference:
   - reference/embeding.md
+- week 5:
+  - week 5/Week 5-35-41.md
+  - week 5/Week 5-23-34.md
+  - week 5/Week 5-1-22.md
 site_author: PK
 site_description: DESCRIPTION
 repo_name: pk1308/MAD1

@@ -1,17 +1,23 @@
-from flask import Flask, request
-import sys
+from flask import Flask, render_template, url_for , redirect
 app = Flask (__name__)
+@app.route("/if")
+def ifelse():
+    user = "MAD I"
+    return render_template("if_example.html", name=user)
 
-
-@app.route('/home', methods = sys.argv[1])
-def my_func():
-    if request.method == 'GET':
-        return "<h1>Hello from App Development</h1>"
-    elif request.method == 'POST':
-        return "<h1>Hello from POST</h1>"
+@app.route("/for")
+def for_loop():
+    # list_of_courses = ['Java', 'Python', 'DBMS', 'PDSA']
+    return "test"
+@app.route("/choice/<pick>")
+def choice (pick):
+    if pick == 'if':
+        return url_for('ifelse')
+    if pick =='for':
+            return redirect(url_for('for_loop'))
     else:
-        return "<h1>Please enter a valid HTTP method</h1>"
-    
+        pass
+
 if __name__ == "__main__":
     
-    app.run(debug=True )
+    app.run(debug=True)
