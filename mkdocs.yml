@@ -27,9 +27,9 @@ nav:
 - reference:
   - reference/embeding.md
 - week 5:
-  - week 5/Week 5-35-41.md
-  - week 5/Week 5-23-34.md
-  - week 5/Week 5-1-22.md
+  - week 5/route.md
+  - week 5/mvc.md
+  - week 5/crud.md
 site_author: PK
 site_description: DESCRIPTION
 repo_name: pk1308/MAD1

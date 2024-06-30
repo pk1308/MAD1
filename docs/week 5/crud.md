@@ -1,24 +1,29 @@
-# Week 5-23-34.pdf (PDF file)
+# CRUD
+
 **Summary**
 **CRUD Operations**
 
 CRUD (Create-Read-Update-Delete) is a fundamental concept in database operations. It encompasses the essential operations performed on data:
 
 **Create:**
+
 * Adds a new entry to the database.
 * Ensures that the entry does not already exist.
 * Checks within the database to avoid conflicts.
 * Considers mandatory and optional fields.
 
 **Read:**
+
 * Retrieves data from the database.
 * Can involve summarizing data, such as counts, distributions, or histograms.
 
 **Update:**
+
 * Modifies existing data in the database.
 * Can involve changing values, addresses, or dates.
 
 **Delete:**
+
 * Removes data from the database.
 * Can be used to remove completed records or correct errors.
 
