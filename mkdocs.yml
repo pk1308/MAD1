@@ -6,7 +6,7 @@ nav:
   - css.md
 - week3:
   - week3/Week 3_annotated.md
-  - week3/Accessibilty.md
+  - week3/Accessibility.md
   - week3/heuristics.md
 - week1:
   - week1/pq_session.md
@@ -35,7 +35,7 @@ site_description: DESCRIPTION
 repo_name: pk1308/MAD1
 repo_url: https://github.com/pk1308/MAD1
 theme:
-  name: material
+  name: dracula
   features:
   - navigation.tabs
   - navigation.sections
