@@ -1,35 +1,35 @@
 site_name: MAD1
 nav:
-- Home:
-  - index.md
-  - Flask.md
-  - css.md
-- week3:
-  - week3/Week 3_annotated.md
-  - week3/Accessibility.md
-  - week3/heuristics.md
-- week1:
-  - week1/pq_session.md
-  - week1/Week 1_annotated.md
-  - week1/week_activity1.md
-- arifacts:
-  - arifacts/1.md
-  - arifacts/viva.md
-- week2:
-  - week2/activity_session_.md
-  - week2/aq_pq.md
-  - week2/Week 2_annotated.md
-- week4:
-  - week4/sql.md
-  - week4/Mechanisms for Persistent Storage and Relational Databases.md
-  - week4/Presistent Storage.md
-  - week4/Relations and ER Diagram.md
-- reference:
-  - reference/embeding.md
-- week 5:
-  - week 5/route.md
-  - week 5/mvc.md
-  - week 5/crud.md
+  - Home:
+      - index.md
+      - Flask.md
+      - css.md
+  - week3:
+      - week3/Week 3_annotated.md
+      - week3/Accessibility.md
+      - week3/heuristics.md
+  - week1:
+      - week1/pq_session.md
+      - week1/Week 1_annotated.md
+      - week1/week_activity1.md
+  - arifacts:
+      - arifacts/1.md
+      - arifacts/viva.md
+  - week2:
+      - week2/activity_session_.md
+      - week2/aq_pq.md
+      - week2/Week 2_annotated.md
+  - week4:
+      - week4/sql.md
+      - week4/Mechanisms for Persistent Storage and Relational Databases.md
+      - week4/Presistent Storage.md
+      - week4/Relations and ER Diagram.md
+  - reference:
+      - reference/embeding.md
+  - week 5:
+      - week 5/route.md
+      - week 5/mvc.md
+      - week 5/crud.md
 site_author: PK
 site_description: DESCRIPTION
 repo_name: pk1308/MAD1
@@ -37,47 +37,47 @@ repo_url: https://github.com/pk1308/MAD1
 theme:
   name: dracula
   features:
-  - navigation.tabs
-  - navigation.sections
-  - toc.integrate
-  - navigation.top
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
   language: en
   palette:
-  - scheme: default
-    toggle:
-      icon: material/toggle-switch-off-outline
-      name: Switch to dark mode
-    primary: teal
-    accent: purple
-  - scheme: slate
-    toggle:
-      icon: material/toggle-switch
-      name: Switch to light mode
-    primary: teal
-    accent: lime
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
 extra:
   social:
-  - icon: fontawesome/brands/github-alt
-    link: https://github.com/pk1308
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/pk1308
 extra_javascript:
-- javascripts/mathjax.js
-- https://polyfill.io/v3/polyfill.min.js
-- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 markdown_extensions:
-- attr_list
-- pymdownx.highlight:
-    anchor_linenums: true
-- pymdownx.inlinehilite
-- pymdownx.snippets
-- admonition
-- pymdownx.arithmatex:
-    generic: true
-- footnotes
-- pymdownx.details
-- pymdownx.superfences
-- pymdownx.mark
-- pymdownx.pathconverter
+  - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - pymdownx.pathconverter
 plugins:
-- search
-- mkdocs-pdf
+  - search
+  - mkdocs-pdf
 copyright: '&copy; 2024 <a href="https://github.com/pk1308"  target="_blank" rel="noopener">PK</a>'
