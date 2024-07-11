@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>Relations and ER Diagram - MAD1</title>
+        <title>Openapi - MAD1</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -139,7 +139,7 @@
             </li>
             <li class="drac-box">
                 <a href="../.."
-                    class="
+                    class=" active 
                     drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
                     data-bs-toggle="collapse" data-bs-target="#week-6-collapse" aria-expanded="false">
                     Week 6
@@ -148,7 +148,7 @@
                     <ul class="mb-5 drac-list drac-list-none">
                             
     <li class="drac-box-ternary">
-        <a href="../../Week%206/Rest_lec6_2/"
+        <a href="../Rest_lec6_2/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Rest lec6 2
@@ -156,15 +156,15 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../../Week%206/openapi/"
-            class="
+        <a href="./"
+            class=" active 
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Openapi
         </a>
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../../Week%206/Week%206-53-70/"
+        <a href="../Week%206-53-70/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Week 6-53-70.pdf (PDF file)
@@ -172,7 +172,7 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../../Week%206/apidesign/"
+        <a href="../apidesign/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Week 6
@@ -283,7 +283,7 @@
             </li>
             <li class="drac-box">
                 <a href="../.."
-                    class=" active 
+                    class="
                     drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
                     data-bs-toggle="collapse" data-bs-target="#week4-collapse" aria-expanded="false">
                     week4
@@ -292,7 +292,7 @@
                     <ul class="mb-5 drac-list drac-list-none">
                             
     <li class="drac-box-ternary">
-        <a href="../sql/"
+        <a href="../../week4/sql/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             SQL
@@ -300,7 +300,7 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../Mechanisms%20for%20Persistent%20Storage%20and%20Relational%20Databases/"
+        <a href="../../week4/Mechanisms%20for%20Persistent%20Storage%20and%20Relational%20Databases/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Mechanisms for Persistent Storage and Relational Databases
@@ -308,7 +308,7 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../Presistent%20Storage/"
+        <a href="../../week4/Presistent%20Storage/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Presistent Storage
@@ -316,8 +316,8 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="./"
-            class=" active 
+        <a href="../../week4/Relations%20and%20ER%20Diagram/"
+            class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Relations and ER Diagram
         </a>
@@ -409,13 +409,13 @@
         <div class="container">
             <div class="row row-preview">
                 <div class="col">
-                    <a href="../Presistent%20Storage/"
+                    <a href="../Rest_lec6_2/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </div>
                 <div class="col">
-                    <a href="../../reference/embeding/"
+                    <a href="../Week%206-53-70/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
@@ -488,44 +488,137 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p><div><h1 id="relations-and-er-diagram">Relations and ER Diagram</h1>
-<p><strong>Summary</strong>
-<strong>Understanding Relationships in Data Modeling</strong></p>
-<p><strong>Introduction</strong></p>
-<p>In data modeling, relationships play a crucial role in defining the structure and organization of data. They establish connections between entities, allowing data to be linked and organized in a meaningful way. Understanding the different types of relationships and their representations is essential for designing effective data models.</p>
-<p><strong>Types of Relationships</strong></p>
-<p>There are three primary types of relationships in data modeling:</p>
+        <p><div><p>OpenAPI, formerly known as Swagger, is a specification for building APIs. It provides a standard way to describe the structure of your APIs so that machines can read them. Here’s a summary of the key components and features of OpenAPI:</p>
+<h3 id="key-components">Key Components</h3>
+<ol>
+<li>
+<p><strong>OpenAPI Specification (OAS)</strong>:</p>
+</li>
+<li>
+<p>A standard, language-agnostic interface to RESTful APIs.</p>
+</li>
+<li>Allows both humans and computers to discover and understand the capabilities of a service without access to source code, documentation, or network traffic inspection.</li>
+<li>
+<p><strong>Paths</strong>:</p>
+</li>
+<li>
+<p>Define the endpoints (resources) and the operations on each endpoint.</p>
+</li>
+<li>Each path can have multiple operations (e.g., GET, POST, PUT, DELETE).</li>
+<li>
+<p><strong>Operations</strong>:</p>
+</li>
+<li>
+<p>Describe the HTTP methods used to interact with the API.</p>
+</li>
+<li>Include details like parameters, request bodies, responses, and security requirements.</li>
+<li>
+<p><strong>Parameters</strong>:</p>
+</li>
+<li>
+<p>Define the inputs to the API operations.</p>
+</li>
+<li>Can be in the path, query string, headers, or cookies.</li>
+<li>
+<p><strong>Request Body</strong>:</p>
+</li>
+<li>
+<p>Describes the payload sent with POST, PUT, and PATCH requests.</p>
+</li>
+<li>Can include schema definitions for complex data structures.</li>
+<li>
+<p><strong>Responses</strong>:</p>
+</li>
+<li>
+<p>Define the possible responses from an API operation.</p>
+</li>
+<li>Include status codes, headers, and response bodies.</li>
+<li>
+<p><strong>Schemas</strong>:</p>
+</li>
+<li>
+<p>Define the structure of the request and response bodies.</p>
+</li>
+<li>Use JSON Schema to describe the data models.</li>
+<li>
+<p><strong>Security</strong>:</p>
+</li>
+<li>
+<p>Define the security mechanisms (e.g., API keys, OAuth2) used to protect the API.</p>
+</li>
+<li>Can be applied globally or to specific operations.</li>
+<li>
+<p><strong>Tags</strong>:</p>
+</li>
+<li>
+<p>Organize operations into groups for better readability and management.</p>
+</li>
+<li>
+<p><strong>External Documentation</strong>:</p>
 <ul>
-<li><strong>One-to-One:</strong> A relationship where each entity in one set is associated with at most one entity in the other set. For example, a student can have only one roll number, and a roll number identifies only one student.</li>
-<li><strong>One-to-Many (Many-to-One):</strong> A relationship where each entity in one set is associated with one or more entities in the other set, but each entity in the other set is associated with at most one entity in the first set. For example, a student can stay in only one hostel, while a hostel can have many students.</li>
-<li><strong>Many-to-Many:</strong> A relationship where each entity in one set can be associated with one or more entities in the other set, and each entity in the other set can be associated with one or more entities in the first set. For example, a student can register for multiple courses, and a course can have multiple students.</li>
+<li>Provide links to additional documentation or resources.</li>
 </ul>
-<p><strong>Diagrammatic Representations</strong></p>
-<p>Relationships in data modeling are often represented using diagrams, such as Entity-Relationship (ER) diagrams and Unified Modeling Language (UML) diagrams.</p>
-<p><strong>Entity-Relationship Diagrams (ERDs)</strong></p>
-<p>ERDs are graphical representations that show the entities in a system, their attributes, and the relationships between them. Entities are represented by rectangles, attributes are represented by ovals, and relationships are represented by lines. The cardinality of a relationship (one-to-one, one-to-many, many-to-many) is indicated by symbols on the connecting lines.</p>
-<p><img alt="1719129069814" src="../image/RelationsandERDiagram/1719129069814.png"></p>
-<p><img alt="1719129463310" src="../image/RelationsandERDiagram/1719129463310.png"></p>
-<p><img alt="1719129474306" src="../image/RelationsandERDiagram/1719129474306.png"></p>
-<p><strong>UML Diagrams</strong></p>
-<p>UML diagrams use a more standardized notation to represent relationships. Class relationships are represented by lines with different types of arrowheads, where the type of arrowhead indicates the cardinality of the relationship.</p>
-<p><strong>Additional Relationship Types</strong></p>
-<p>In addition to the three primary types of relationships, there are several other variations, including:</p>
+</li>
+</ol>
+<h3 id="features">Features</h3>
 <ul>
-<li><strong>Self-referential relationships:</strong> Relationships where an entity can relate to itself. For example, a department can have a manager who is also an employee in the same department.</li>
-<li><strong>Weak entities:</strong> Entities that require a relationship with another entity to exist. For example, a line item on an invoice cannot exist without an invoice.</li>
-<li><strong>Ternary relationships:</strong> Relationships involving three entities. For example, a relationship between students, courses, and grades.</li>
+<li>
+<p><strong>Documentation</strong>:</p>
+</li>
+<li>
+<p>Automatically generate interactive API documentation (e.g., Swagger UI).</p>
+</li>
+<li>Allows developers to explore and test API endpoints directly from the documentation.</li>
+<li>
+<p><strong>Code Generation</strong>:</p>
+</li>
+<li>
+<p>Generate client libraries, server stubs, and API documentation in various programming languages.</p>
+</li>
+<li>Tools like Swagger Codegen and OpenAPI Generator support this feature.</li>
+<li>
+<p><strong>Validation</strong>:</p>
+</li>
+<li>
+<p>Validate API requests and responses against the OpenAPI specification.</p>
+</li>
+<li>Ensure that the API adheres to the defined contract.</li>
+<li>
+<p><strong>Interoperability</strong>:</p>
+</li>
+<li>
+<p>Standardized format allows for easy integration with other tools and services.</p>
+</li>
+<li>Supports a wide range of tools for API design, testing, and monitoring.</li>
 </ul>
-<p><strong>Importance of Relationships in Data Modeling</strong></p>
-<p>Relationships play a vital role in data modeling for several reasons:</p>
-<ul>
-<li>They define the structure and organization of data, enabling efficient data retrieval and manipulation.</li>
-<li>They ensure data consistency by maintaining constraints on the connections between entities.</li>
-<li>They facilitate data normalization, which reduces data redundancy and improves data integrity.</li>
-<li>They allow for the creation of complex data models that can accurately reflect real-world entities and their interactions.</li>
-</ul>
-<p><strong>Conclusion</strong></p>
-<p>Understanding relationships in data modeling is fundamental to designing effective and efficient data models. By comprehending the different types of relationships, their representations, and their importance, data architects and database designers can create data models that meet the requirements of their applications and provide a solid foundation for data-driven decisions.</p></div></p>
+<h3 id="example">Example</h3>
+<p>Here’s a simple example of an OpenAPI specification in YAML format:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">openapi</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.0.0</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">info</span><span class="p">:</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Simple API</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.0.0</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nt">paths</span><span class="p">:</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nt">/users</span><span class="p">:</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nt">get</span><span class="p">:</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">      </span><span class="nt">summary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">List all users</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">      </span><span class="nt">responses</span><span class="p">:</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="s">'200'</span><span class="p p-Indicator">:</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">          </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">A list of users</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">          </span><span class="nt">content</span><span class="p">:</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">            </span><span class="nt">application/json</span><span class="p">:</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">              </span><span class="nt">schema</span><span class="p">:</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">                </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">array</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">                </span><span class="nt">items</span><span class="p">:</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">                  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">object</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">                  </span><span class="nt">properties</span><span class="p">:</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">                    </span><span class="nt">id</span><span class="p">:</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">                      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">integer</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">                    </span><span class="nt">name</span><span class="p">:</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">                      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+</code></pre></div>
+<p>This example defines a simple API with one endpoint (<code>/users</code>) that supports a GET operation to list all users.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>OpenAPI is a powerful tool for designing, documenting, and interacting with APIs. It standardizes the way APIs are described, making it easier for developers to understand and use them. By leveraging OpenAPI, you can improve the consistency, quality, and usability of your APIs.</p></div></p>
     </article>
 </section>
             <!-- endblock -->

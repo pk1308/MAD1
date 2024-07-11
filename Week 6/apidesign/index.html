@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>Relations and ER Diagram - MAD1</title>
+        <title>Week 6 - MAD1</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -139,7 +139,7 @@
             </li>
             <li class="drac-box">
                 <a href="../.."
-                    class="
+                    class=" active 
                     drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
                     data-bs-toggle="collapse" data-bs-target="#week-6-collapse" aria-expanded="false">
                     Week 6
@@ -148,7 +148,7 @@
                     <ul class="mb-5 drac-list drac-list-none">
                             
     <li class="drac-box-ternary">
-        <a href="../../Week%206/Rest_lec6_2/"
+        <a href="../Rest_lec6_2/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Rest lec6 2
@@ -156,7 +156,7 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../../Week%206/openapi/"
+        <a href="../openapi/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Openapi
@@ -164,7 +164,7 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../../Week%206/Week%206-53-70/"
+        <a href="../Week%206-53-70/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Week 6-53-70.pdf (PDF file)
@@ -172,8 +172,8 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../../Week%206/apidesign/"
-            class="
+        <a href="./"
+            class=" active 
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Week 6
         </a>
@@ -283,7 +283,7 @@
             </li>
             <li class="drac-box">
                 <a href="../.."
-                    class=" active 
+                    class="
                     drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
                     data-bs-toggle="collapse" data-bs-target="#week4-collapse" aria-expanded="false">
                     week4
@@ -292,7 +292,7 @@
                     <ul class="mb-5 drac-list drac-list-none">
                             
     <li class="drac-box-ternary">
-        <a href="../sql/"
+        <a href="../../week4/sql/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             SQL
@@ -300,7 +300,7 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../Mechanisms%20for%20Persistent%20Storage%20and%20Relational%20Databases/"
+        <a href="../../week4/Mechanisms%20for%20Persistent%20Storage%20and%20Relational%20Databases/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Mechanisms for Persistent Storage and Relational Databases
@@ -308,7 +308,7 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../Presistent%20Storage/"
+        <a href="../../week4/Presistent%20Storage/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Presistent Storage
@@ -316,8 +316,8 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="./"
-            class=" active 
+        <a href="../../week4/Relations%20and%20ER%20Diagram/"
+            class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Relations and ER Diagram
         </a>
@@ -409,13 +409,13 @@
         <div class="container">
             <div class="row row-preview">
                 <div class="col">
-                    <a href="../Presistent%20Storage/"
+                    <a href="../Week%206-53-70/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </div>
                 <div class="col">
-                    <a href="../../reference/embeding/"
+                    <a href="../../week1/pq_session/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
@@ -488,44 +488,70 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p><div><h1 id="relations-and-er-diagram">Relations and ER Diagram</h1>
-<p><strong>Summary</strong>
-<strong>Understanding Relationships in Data Modeling</strong></p>
-<p><strong>Introduction</strong></p>
-<p>In data modeling, relationships play a crucial role in defining the structure and organization of data. They establish connections between entities, allowing data to be linked and organized in a meaningful way. Understanding the different types of relationships and their representations is essential for designing effective data models.</p>
-<p><strong>Types of Relationships</strong></p>
-<p>There are three primary types of relationships in data modeling:</p>
+        <p><div><h1 id="week-6">Week 6</h1>
+<p><strong>Summary</strong></p>
+<h2 id="rest-and-apis">REST and APIs</h2>
+<h3 id="api-design">API Design</h3>
 <ul>
-<li><strong>One-to-One:</strong> A relationship where each entity in one set is associated with at most one entity in the other set. For example, a student can have only one roll number, and a roll number identifies only one student.</li>
-<li><strong>One-to-Many (Many-to-One):</strong> A relationship where each entity in one set is associated with one or more entities in the other set, but each entity in the other set is associated with at most one entity in the first set. For example, a student can stay in only one hostel, while a hostel can have many students.</li>
-<li><strong>Many-to-Many:</strong> A relationship where each entity in one set can be associated with one or more entities in the other set, and each entity in the other set can be associated with one or more entities in the first set. For example, a student can register for multiple courses, and a course can have multiple students.</li>
+<li><strong>Web architecture - REST:</strong> REST (REpresentational State Transfer) is a software architecture style for distributed systems on the web. It defines a set of constraints that guide the design of web services.</li>
+<li><strong>API Examples:</strong> APIs (Application Programming Interfaces) are interfaces that allow applications to communicate with each other. Examples of APIs include HTTP, HTTPS, SOAP, and REST.</li>
+<li><strong>OpenAPI specification:</strong> The OpenAPI Specification (OAS) is a language-agnostic specification for describing REST APIs. It provides a common way to document and share APIs.</li>
 </ul>
-<p><strong>Diagrammatic Representations</strong></p>
-<p>Relationships in data modeling are often represented using diagrams, such as Entity-Relationship (ER) diagrams and Unified Modeling Language (UML) diagrams.</p>
-<p><strong>Entity-Relationship Diagrams (ERDs)</strong></p>
-<p>ERDs are graphical representations that show the entities in a system, their attributes, and the relationships between them. Entities are represented by rectangles, attributes are represented by ovals, and relationships are represented by lines. The cardinality of a relationship (one-to-one, one-to-many, many-to-many) is indicated by symbols on the connecting lines.</p>
-<p><img alt="1719129069814" src="../image/RelationsandERDiagram/1719129069814.png"></p>
-<p><img alt="1719129463310" src="../image/RelationsandERDiagram/1719129463310.png"></p>
-<p><img alt="1719129474306" src="../image/RelationsandERDiagram/1719129474306.png"></p>
-<p><strong>UML Diagrams</strong></p>
-<p>UML diagrams use a more standardized notation to represent relationships. Class relationships are represented by lines with different types of arrowheads, where the type of arrowhead indicates the cardinality of the relationship.</p>
-<p><strong>Additional Relationship Types</strong></p>
-<p>In addition to the three primary types of relationships, there are several other variations, including:</p>
+<h3 id="distributed-software-architecture">Distributed Software Architecture</h3>
 <ul>
-<li><strong>Self-referential relationships:</strong> Relationships where an entity can relate to itself. For example, a department can have a manager who is also an employee in the same department.</li>
-<li><strong>Weak entities:</strong> Entities that require a relationship with another entity to exist. For example, a line item on an invoice cannot exist without an invoice.</li>
-<li><strong>Ternary relationships:</strong> Relationships involving three entities. For example, a relationship between students, courses, and grades.</li>
+<li><strong>Servers - Clients:</strong> In a distributed software architecture, clients and servers communicate with each other over a network.</li>
+<li><strong>Standard “protocols” needed for communication:</strong> Protocols are sets of rules that govern how clients and servers communicate with each other. Some common protocols include HTTP, HTTPS, and SOAP.</li>
+<li><strong>Assumptions?</strong> When designing a distributed software architecture, it is important to consider the following assumptions:</li>
+<li>Is the server always on?</li>
+<li>Does the server know what the client is doing?</li>
+<li>Is client authentication required?</li>
+<li>What is the network latency?</li>
 </ul>
-<p><strong>Importance of Relationships in Data Modeling</strong></p>
-<p>Relationships play a vital role in data modeling for several reasons:</p>
+<h3 id="the-web">The Web</h3>
 <ul>
-<li>They define the structure and organization of data, enabling efficient data retrieval and manipulation.</li>
-<li>They ensure data consistency by maintaining constraints on the connections between entities.</li>
-<li>They facilitate data normalization, which reduces data redundancy and improves data integrity.</li>
-<li>They allow for the creation of complex data models that can accurately reflect real-world entities and their interactions.</li>
+<li><strong>Client - Server may be far apart:</strong> Clients and servers on the web can be located far apart from each other.</li>
+<li><strong>Different networks, latencies, quality:</strong> Clients and servers can be connected to different networks with different latencies and quality of service.</li>
+<li><strong>Authentication? Not core part of protocol:</strong> Authentication is not a core part of the web protocol.</li>
+<li><strong>State?</strong></li>
+<li>Servers do not know the state of the client.</li>
+<li>Clients cannot be sure of the state of the server.</li>
 </ul>
-<p><strong>Conclusion</strong></p>
-<p>Understanding relationships in data modeling is fundamental to designing effective and efficient data models. By comprehending the different types of relationships, their representations, and their importance, data architects and database designers can create data models that meet the requirements of their applications and provide a solid foundation for data-driven decisions.</p></div></p>
+<h3 id="architecture-for-the-web">Architecture for the Web</h3>
+<ul>
+<li><strong>Roy Fielding, PhD thesis 2000 UC Irvine:</strong> Roy Fielding's PhD thesis, "Architectural Styles and the Design of Network-based Software Architectures," introduced the concept of REST.</li>
+<li><strong>“REpresentational State Transfer” - REST:</strong> REST is an architectural style that takes into account the limitations of the web and provides guidelines for designing web services.</li>
+<li><strong>Software Architecture Style:</strong> REST is a software architecture style, not a set of rules.</li>
+</ul>
+<h3 id="rest-constraints">REST Constraints</h3>
+<p><strong>Constraint 1: Client - Server Network</strong></p>
+<ul>
+<li><strong>Clients:</strong> End users who request data and display it.</li>
+<li><strong>Servers:</strong> Store data and provide it on demand.</li>
+<li><strong>Network:</strong> Connects clients to servers and transmits data.</li>
+</ul>
+<p><img alt="1720639611282" src="../image/Week6-1-30/1720639611282.png"></p>
+<p><strong>Constraint 2: Stateless</strong></p>
+<ul>
+<li>Servers cannot assume the state of the client.</li>
+<li>Clients cannot assume the state of the server.</li>
+</ul>
+<p><strong>Constraint 3: Layered System</strong></p>
+<ul>
+<li>Networks, load balancers, proxy frontends, authentication servers, and backends are all components of a layered system.</li>
+</ul>
+<p><strong>Constraint 4: Cacheability</strong></p>
+<ul>
+<li>Responses can be cached by proxy caches and browsers to improve performance.</li>
+</ul>
+<p><strong>Constraint 5: Uniform Interface</strong></p>
+<ul>
+<li>Clients and servers interact in a uniform and predictable manner.</li>
+<li>Servers expose resources that can be discovered by clients.</li>
+</ul>
+<p><strong>Constraint 6: Code on Demand (Optional)</strong></p>
+<ul>
+<li>Servers can extend client functionality by providing code (e.g., JavaScript, Java applets).</li>
+</ul></div></p>
     </article>
 </section>
             <!-- endblock -->

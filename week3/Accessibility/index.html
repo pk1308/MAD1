@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>Relations and ER Diagram - MAD1</title>
+        <title>Web Accessibility Initiative (WAI) - MAD1</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -103,7 +103,7 @@
             </li>
             <li class="drac-box">
                 <a href="../.."
-                    class="
+                    class=" active 
                     drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
                     data-bs-toggle="collapse" data-bs-target="#week3-collapse" aria-expanded="false">
                     week3
@@ -112,7 +112,7 @@
                     <ul class="mb-5 drac-list drac-list-none">
                             
     <li class="drac-box-ternary">
-        <a href="../../week3/Week%203_annotated/"
+        <a href="../Week%203_annotated/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Week 3
@@ -120,7 +120,7 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../../week3/heuristics/"
+        <a href="../heuristics/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Nielsen Norman Group's Ten Usability Heuristics
@@ -128,8 +128,8 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../../week3/Accessibility/"
-            class="
+        <a href="./"
+            class=" active 
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Web Accessibility Initiative (WAI)
         </a>
@@ -283,7 +283,7 @@
             </li>
             <li class="drac-box">
                 <a href="../.."
-                    class=" active 
+                    class="
                     drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
                     data-bs-toggle="collapse" data-bs-target="#week4-collapse" aria-expanded="false">
                     week4
@@ -292,7 +292,7 @@
                     <ul class="mb-5 drac-list drac-list-none">
                             
     <li class="drac-box-ternary">
-        <a href="../sql/"
+        <a href="../../week4/sql/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             SQL
@@ -300,7 +300,7 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../Mechanisms%20for%20Persistent%20Storage%20and%20Relational%20Databases/"
+        <a href="../../week4/Mechanisms%20for%20Persistent%20Storage%20and%20Relational%20Databases/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Mechanisms for Persistent Storage and Relational Databases
@@ -308,7 +308,7 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../Presistent%20Storage/"
+        <a href="../../week4/Presistent%20Storage/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Presistent Storage
@@ -316,8 +316,8 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="./"
-            class=" active 
+        <a href="../../week4/Relations%20and%20ER%20Diagram/"
+            class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Relations and ER Diagram
         </a>
@@ -409,13 +409,13 @@
         <div class="container">
             <div class="row row-preview">
                 <div class="col">
-                    <a href="../Presistent%20Storage/"
+                    <a href="../heuristics/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </div>
                 <div class="col">
-                    <a href="../../reference/embeding/"
+                    <a href="../../Week%206/Rest_lec6_2/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
@@ -488,44 +488,44 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p><div><h1 id="relations-and-er-diagram">Relations and ER Diagram</h1>
-<p><strong>Summary</strong>
-<strong>Understanding Relationships in Data Modeling</strong></p>
-<p><strong>Introduction</strong></p>
-<p>In data modeling, relationships play a crucial role in defining the structure and organization of data. They establish connections between entities, allowing data to be linked and organized in a meaningful way. Understanding the different types of relationships and their representations is essential for designing effective data models.</p>
-<p><strong>Types of Relationships</strong></p>
-<p>There are three primary types of relationships in data modeling:</p>
-<ul>
-<li><strong>One-to-One:</strong> A relationship where each entity in one set is associated with at most one entity in the other set. For example, a student can have only one roll number, and a roll number identifies only one student.</li>
-<li><strong>One-to-Many (Many-to-One):</strong> A relationship where each entity in one set is associated with one or more entities in the other set, but each entity in the other set is associated with at most one entity in the first set. For example, a student can stay in only one hostel, while a hostel can have many students.</li>
-<li><strong>Many-to-Many:</strong> A relationship where each entity in one set can be associated with one or more entities in the other set, and each entity in the other set can be associated with one or more entities in the first set. For example, a student can register for multiple courses, and a course can have multiple students.</li>
-</ul>
-<p><strong>Diagrammatic Representations</strong></p>
-<p>Relationships in data modeling are often represented using diagrams, such as Entity-Relationship (ER) diagrams and Unified Modeling Language (UML) diagrams.</p>
-<p><strong>Entity-Relationship Diagrams (ERDs)</strong></p>
-<p>ERDs are graphical representations that show the entities in a system, their attributes, and the relationships between them. Entities are represented by rectangles, attributes are represented by ovals, and relationships are represented by lines. The cardinality of a relationship (one-to-one, one-to-many, many-to-many) is indicated by symbols on the connecting lines.</p>
-<p><img alt="1719129069814" src="../image/RelationsandERDiagram/1719129069814.png"></p>
-<p><img alt="1719129463310" src="../image/RelationsandERDiagram/1719129463310.png"></p>
-<p><img alt="1719129474306" src="../image/RelationsandERDiagram/1719129474306.png"></p>
-<p><strong>UML Diagrams</strong></p>
-<p>UML diagrams use a more standardized notation to represent relationships. Class relationships are represented by lines with different types of arrowheads, where the type of arrowhead indicates the cardinality of the relationship.</p>
-<p><strong>Additional Relationship Types</strong></p>
-<p>In addition to the three primary types of relationships, there are several other variations, including:</p>
-<ul>
-<li><strong>Self-referential relationships:</strong> Relationships where an entity can relate to itself. For example, a department can have a manager who is also an employee in the same department.</li>
-<li><strong>Weak entities:</strong> Entities that require a relationship with another entity to exist. For example, a line item on an invoice cannot exist without an invoice.</li>
-<li><strong>Ternary relationships:</strong> Relationships involving three entities. For example, a relationship between students, courses, and grades.</li>
-</ul>
-<p><strong>Importance of Relationships in Data Modeling</strong></p>
-<p>Relationships play a vital role in data modeling for several reasons:</p>
-<ul>
-<li>They define the structure and organization of data, enabling efficient data retrieval and manipulation.</li>
-<li>They ensure data consistency by maintaining constraints on the connections between entities.</li>
-<li>They facilitate data normalization, which reduces data redundancy and improves data integrity.</li>
-<li>They allow for the creation of complex data models that can accurately reflect real-world entities and their interactions.</li>
-</ul>
-<p><strong>Conclusion</strong></p>
-<p>Understanding relationships in data modeling is fundamental to designing effective and efficient data models. By comprehending the different types of relationships, their representations, and their importance, data architects and database designers can create data models that meet the requirements of their applications and provide a solid foundation for data-driven decisions.</p></div></p>
+        <p><div><h1 id="web-accessibility-initiative-wai">Web Accessibility Initiative (WAI)</h1>
+<p>The W3C Web Accessibility Initiative (WAI) outlines several core principles to make web content accessible to people with disabilities. These principles are encapsulated in guidelines such as the Web Content Accessibility Guidelines (WCAG), the Authoring Tool Accessibility Guidelines (ATAG), and the User Agent Accessibility Guidelines (UAAG). Here are some key aspects:</p>
+<ol>
+<li>
+<p><strong>Perceivable Information and User Interface</strong>:</p>
+</li>
+<li>
+<p><strong>Text Alternatives</strong>: Provide text alternatives for non-text content (e.g., images, icons, and multimedia). These text alternatives enable content to be rendered in various forms, such as large print, braille, speech, symbols, or simpler language【7†source】.</p>
+</li>
+<li>
+<p><strong>Captions and Audio Descriptions</strong>: Offer captions for videos and audio descriptions for visual content, ensuring that users who cannot see or hear the media can still understand the content【7†source】.</p>
+</li>
+<li>
+<p><strong>Operable User Interface and Navigation</strong>:</p>
+</li>
+<li>
+<p><strong>Keyboard Accessibility</strong>: Ensure that all functionality is available from a keyboard. This is crucial for users who cannot use a mouse and rely on keyboard navigation.</p>
+</li>
+<li>
+<p><strong>Enough Time</strong>: Provide users enough time to read and use content. This includes mechanisms to extend time limits on activities.</p>
+</li>
+<li>
+<p><strong>Understandable Information and User Interface</strong>:</p>
+</li>
+<li>
+<p><strong>Readable Content</strong>: Make text readable and understandable. This includes providing clear instructions and using simple language where possible.</p>
+</li>
+<li>
+<p><strong>Predictable Web Pages</strong>: Ensure that web pages operate in predictable ways. For example, navigation mechanisms should be consistent throughout the site【7†source】.</p>
+</li>
+<li>
+<p><strong>Robust Content and Reliable Interpretation</strong>:</p>
+</li>
+<li>
+<p><strong>Compatibility</strong>: Content must be robust enough to be interpreted reliably by a wide variety of user agents, including assistive technologies. This involves following web standards and ensuring that content is compatible with current and future technologies.</p>
+</li>
+</ol>
+<p>For a comprehensive guide and more details, you can visit the <a href="https://www.w3.org/WAI/fundamentals/accessibility-principles/">W3C Accessibility Principles page</a>.</p></div></p>
     </article>
 </section>
             <!-- endblock -->

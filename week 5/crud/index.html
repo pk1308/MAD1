@@ -120,18 +120,62 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../../week3/Accessibilty/"
+        <a href="../../week3/heuristics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nielsen Norman Group's Ten Usability Heuristics
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week3/Accessibility/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Web Accessibility Initiative (WAI)
         </a>
     </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week-6-collapse" aria-expanded="false">
+                    Week 6
+                </a>
+                <div class="collapse" id="week-6-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
                             
     <li class="drac-box-ternary">
-        <a href="../../week3/heuristics/"
+        <a href="../../Week%206/Rest_lec6_2/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
-            Nielsen Norman Group's Ten Usability Heuristics
+            Rest lec6 2
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%206/openapi/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Openapi
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%206/Week%206-53-70/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 6-53-70.pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%206/apidesign/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 6
         </a>
     </li>
                     </ul>
@@ -315,7 +359,7 @@
         <a href="../route/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
-            Week 5-35-41.pdf (PDF file)
+            Routes
         </a>
     </li>
                             
@@ -323,7 +367,7 @@
         <a href="../mvc/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
-            Week 5-1-22.pdf (PDF file)
+            MVC
         </a>
     </li>
                             
@@ -496,7 +540,56 @@
 <li>PUT: Update existing data</li>
 <li>DELETE: Remove data</li>
 </ul>
-<p>Understanding these concepts is crucial for designing and implementing efficient and user-friendly web applications.</p></div></p>
+<p>Understanding these concepts is crucial for designing and implementing efficient and user-friendly web applications.</p>
+<p>usage of the "enctype" attribute in HTML forms:</p>
+<p>The "enctype" attribute can be used with HTML form elements regardless of the request method (GET or POST). However, its practical application and effect are most relevant when the form method is POST. Here's a more detailed explanation:</p>
+<ol>
+<li>Usage with POST method:
+   When the form method is POST, the "enctype" attribute specifies how the form data should be encoded before sending it to the server. There are three possible values for "enctype" with POST:</li>
+</ol>
+<p>a) application/x-www-form-urlencoded (default)
+   b) multipart/form-data
+   c) text/plain</p>
+<p>The "multipart/form-data" encoding is particularly important when uploading files through a form.
+2. Usage with GET method:
+   When the form method is GET, the "enctype" attribute is generally ignored by browsers. This is because GET requests send data as part of the URL query string, which has its own encoding rules.</p>
+<p>So, while you can technically include the "enctype" attribute in a form with method="GET", it won't have any practical effect on how the data is sent.</p>
+<p>Here's an example of a form using POST method with "enctype" specified:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">"/upload"</span> <span class="na">method</span><span class="o">=</span><span class="s">"POST"</span> <span class="na">enctype</span><span class="o">=</span><span class="s">"multipart/form-data"</span><span class="p">&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"file"</span> <span class="na">name</span><span class="o">=</span><span class="s">"fileUpload"</span><span class="p">&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"submit"</span> <span class="na">value</span><span class="o">=</span><span class="s">"Upload"</span><span class="p">&gt;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>In this case, the "enctype" attribute is crucial for proper file uploading.</p>
+<p>To summarize, while the "enctype" attribute is most relevant and commonly used with POST requests, it's not strictly limited to POST methods in terms of HTML syntax. It's just that its effect is only meaningful with POST requests.</p>
+<p>You're correct to highlight "application/x-www-form-urlencoded" as the default encoding type for HTML forms.its usage:</p>
+<ol>
+<li>Default Behavior:
+   When you don't specify an "enctype" attribute in your form, the browser automatically uses "application/x-www-form-urlencoded". This means you don't need to explicitly set it unless you want to use a different encoding type.</li>
+<li>Format:
+   With this encoding, form data is sent as name-value pairs. Each name-value pair is separated by an ampersand (&amp;), and spaces are replaced by plus signs (+). Special characters are percent-encoded.</li>
+<li>Example:
+   If you have a form with fields "name" and "age", the encoded data might look like this:</li>
+</ol>
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>name=John+Doe&amp;age=30
+</code></pre></div>
+4. Usage:
+   This encoding is suitable for most forms that don't involve file uploads. It's efficient for sending text data.
+5. Code Example:
+   Here's how you would explicitly set this encoding (though it's not necessary as it's the default):
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">"/submit"</span> <span class="na">method</span><span class="o">=</span><span class="s">"POST"</span> <span class="na">enctype</span><span class="o">=</span><span class="s">"application/x-www-form-urlencoded"</span><span class="p">&gt;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"text"</span> <span class="na">name</span><span class="o">=</span><span class="s">"username"</span><span class="p">&gt;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"password"</span> <span class="na">name</span><span class="o">=</span><span class="s">"password"</span><span class="p">&gt;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"submit"</span> <span class="na">value</span><span class="o">=</span><span class="s">"Login"</span><span class="p">&gt;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</code></pre></div>
+6. Limitations:
+   While this encoding works well for most text data, it's not suitable for sending large amounts of data or for file uploads. In those cases, "multipart/form-data" is more appropriate.
+7. GET vs POST:
+   When using the GET method, form data is automatically encoded in the URL using this format, regardless of the "enctype" attribute.
+8. Server-side Handling:
+   Most server-side frameworks and languages have built-in support for parsing "application/x-www-form-urlencoded" data, making it easy to work with on the backend.
+<p>Understanding this default encoding type is crucial for web developers, as it affects how data is sent to the server and how it needs to be processed on the server side. It's particularly important when debugging form submissions or when working with APIs that expect data in this format.</p></div></p>
     </article>
 </section>
             <!-- endblock -->
