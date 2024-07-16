@@ -1,4 +1,5 @@
-# Week 7-1-20.pdf (PDF file)
+# Backend Systems
+
 **Summary**
 **Backend Systems**
 
@@ -22,9 +23,34 @@ The memory hierarchy consists of various types of storage elements, each with it
 
 When evaluating storage devices, several key parameters must be considered:
 
-* **Latency:** Latency refers to the time it takes to access data from a storage device. Lower latency is better, as it reduces the time spent waiting for data.
-* **Throughput:** Throughput refers to the amount of data that can be transferred from a storage device per unit of time. Higher throughput is better, as it enables faster data transfer rates.
-* **Density:** Density refers to the amount of data that can be stored in a given unit of space or for a given cost. Higher density is better, as it allows for more efficient storage and lower costs.
+1. **Latency**:
+
+   - **Definition**: Latency is the time it takes to read the first value from a storage location. Lower latency is better because it means data can be accessed more quickly.
+   - **Comparison**:
+     - Registers have the lowest latency.
+     - Followed by SRAM (Static Random-Access Memory).
+     - Then DRAM (Dynamic Random-Access Memory).
+     - SSDs (Solid State Drives) have higher latency than DRAM.
+     - HDDs (Hard Disk Drives) have the highest latency among the listed storage types.
+2. **Throughput**:
+
+   - **Definition**: Throughput is the number of bytes per second that can be read from the storage. Higher throughput is better because it means more data can be read in a given amount of time.
+   - **Comparison**:
+     - DRAM has the highest throughput.
+     - Followed by SSDs.
+     - HDDs have lower throughput compared to SSDs and DRAM.
+     - Registers and SRAM are not included in the throughput comparison due to their limited capacity.
+3. **Density**:
+
+   - **Definition**: Density refers to the number of bits that can be stored per unit area or cost. Higher density is better because it means more data can be stored in a smaller space or at a lower cost.
+   - **Comparison**:
+     - HDDs have the highest density.
+     - Followed by SSDs.
+     - Then DRAM.
+     - SRAM has lower density than DRAM.
+     - Registers have the lowest density.
+
+In summary, registers and SRAM are very fast but have limited capacity and lower density. DRAM offers a good balance of speed and capacity. SSDs provide high throughput and density but with higher latency compared to DRAM. HDDs offer the highest density but have the highest latency and lower throughput
 
 **Computer Organization**
 

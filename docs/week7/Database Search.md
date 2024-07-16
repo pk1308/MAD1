@@ -1,5 +1,7 @@
-# Week 7-31-41.pdf (PDF file)
+# Database Search
+
 **Summary**
+
 ## Database Search: Optimizing Queries with Indexes
 
 **Introduction:**

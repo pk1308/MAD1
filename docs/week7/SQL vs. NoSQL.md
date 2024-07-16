@@ -1,5 +1,7 @@
-# Week 7-42-53.pdf (PDF file)
+# SQL vs. NoSQL
+
 **Summary**
+
 ## SQL vs. NoSQL: A Comprehensive Overview
 
 ### SQL (Structured Query Language)

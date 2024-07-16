@@ -1,5 +1,7 @@
-# Week 7-21-30.pdf (PDF file)
+# Data Search
+
 **Summary**
+
 ## Data Search
 
 Data search is a crucial aspect of computer science, as it allows us to efficiently find specific pieces of information within a dataset. This process is essential in various applications, including database management, information retrieval, and data analysis.
@@ -9,13 +11,9 @@ Data search is a crucial aspect of computer science, as it allows us to efficien
 When analyzing the performance of searching algorithms, computer scientists use O() notation to describe the time complexity of the algorithm. O() notation provides a rough approximation of how the algorithm's execution time grows as the input size increases.
 
 - **O(1)**: Constant time, independent of input size. This is the ideal scenario, as the algorithm's performance remains consistent regardless of the input size.
-
 - **O(log N)**: Logarithmic time, grows slowly with input size. Algorithms with logarithmic time complexity are highly efficient, as the execution time increases only logarithmically with the input size.
-
 - **O(N)**: Linear time, often the baseline. Algorithms with linear time complexity are efficient for small input sizes but become less efficient as the input size grows.
-
 - **O(Nk)**: Polynomial time, quadratic, cubic, etc. Algorithms with polynomial time complexity are not as efficient as those with logarithmic or linear time complexity, and their execution time can become significant for large input sizes.
-
 - **O(kN)**: Exponential time, very bad. Algorithms with exponential time complexity are highly inefficient and are typically not practical even for reasonably small input sizes.
 
 ### Searching for an Element in Memory
@@ -47,8 +45,8 @@ When analyzing the performance of searching algorithms, computer scientists use 
 **Binary Search (Sorted Data in an Array)**
 
 - Look at the middle element in the array:
-    - If it is greater than the target, search in the lower half.
-    - If it is less than the target, search in the upper half.
+  - If it is greater than the target, search in the lower half.
+  - If it is less than the target, search in the upper half.
 - Switch focus to the new array, which is half the size of the original.
 - Repeat.
 - **Time Complexity**: O(log N), where N is the number of elements in the array.
@@ -65,20 +63,20 @@ When analyzing the performance of searching algorithms, computer scientists use 
 **Binary Search Tree (BST)**
 
 - **Advantages**:
-    - Easier to maintain sorted order as the tree grows.
+  - Easier to maintain sorted order as the tree grows.
 - **Disadvantages**:
-    - BSTs can become unbalanced, resulting in O(N) time complexity.
+  - BSTs can become unbalanced, resulting in O(N) time complexity.
 
 **Self-Balancing BSTs**
 
 - **Advantages**:
-    - Address the unbalancing issue in BSTs.
-    - Maintain reasonable time complexity even for large datasets.
+  - Address the unbalancing issue in BSTs.
+  - Maintain reasonable time complexity even for large datasets.
 - **Examples**: Red-black trees, AVL trees, B-trees
 
 **Hash Tables**
 
 - **Advantages**:
-    - O(1) time complexity for computing an index for an element.
+  - O(1) time complexity for computing an index for an element.
 - **Disadvantages**:
-    - Relies on the assumption that the index for each element is unique, which can be difficult to guarantee.
+  - Relies on the assumption that the index for each element is unique, which can be difficult to guarantee.

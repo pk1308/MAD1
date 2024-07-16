@@ -1,4 +1,5 @@
-# Week 7-54-70.pdf (PDF file)
+# Scaling Strategies
+
 **Summary**
 **Scaling Strategies**
 
@@ -36,7 +37,7 @@ The choice of scaling strategy depends on the specific application requirements.
 
 **Typical web applications:** May benefit from BASE-compliant NoSQL databases, which offer high availability and scalability. Eventual consistency is often acceptable for social media, news feeds, and e-commerce applications, where real-time updates are not critical.
 
-**Security**
+### **Security**
 
 Web applications, including database-driven applications, are vulnerable to a range of security threats, including SQL injection, buffer overflows, and server-level issues. Proper validation and sanitization of user input, use of known frameworks, and regular patch updates are essential for mitigating these threats.
 
