@@ -23,7 +23,7 @@ class course(db.Model):
     course_description = db.Column(db.String())
 
 
-class enrollments(db.Model):
+class enrollment(db.Model):
     enrollment_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     estudent_id = db.Column(db.Integer, db.ForeignKey(student.student_id), nullable=False )
     ecourse_id = db.Column(db.Integer, db.ForeignKey(course.course_id), nullable=False)
