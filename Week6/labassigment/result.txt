@@ -1,0 +1,28 @@
+{
+    "test_1": {
+        "description": "Test to check if API is able to create student resource",
+        "status": "Failed",
+        "weight": 1
+    },
+
+
+    "test_13": {
+        "description": "Test to check if api responds with 400 for invalid course data 
+        (Required parameter missing)",
+        "status": "Failed",
+        "weight": 1
+    },
+
+    "test_21": {
+        "description": "Test to check if API is able to create an enrollment between student and course(returns 201 status code)",
+        "status": "Failed",
+        "weight": 1
+    },
+
+    "test_26": {
+        "description": "Test to check if API returns 404 for non-existent enrollment",
+        "status": "Failed",
+        "weight": 1
+    },
+    "final_score": 80.77
+}

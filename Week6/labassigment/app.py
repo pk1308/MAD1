@@ -18,7 +18,8 @@ app.app_context().push()
 
 api.add_resource(CourseId, "/api/course/<int:course_id>", "/api/course")
 api.add_resource(StudentId, "/api/student/<int:student_id>", "/api/student")
-api.add_resource(CourseNStudent, "/api/student/<int:student_id>/course" , "/api/student/<int:student_id>/course/<int:course_id>")
+api.add_resource(CourseNStudent, "/api/student/<int:student_id>/course" ,
+                 "/api/student/<int:student_id>/course/<int:course_id>")
 
 if __name__ == "__main__":
     # Run the Flask app
