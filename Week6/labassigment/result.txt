@@ -1,28 +1,21 @@
-{
-    "test_1": {
-        "description": "Test to check if API is able to create student resource",
+
+a. Test 3: The API doesn't respond with a 400 error for invalid data (missing required parameters) when creating a student resource.
+
+b. Test 13: The API doesn't respond with a 400 error for invalid data (missing required parameters) when creating a course resource.
+
+c. Test 26: The API doesn't return a 404 error for non-existent enrollments.
+
+    "test_3": {
+        "description": "Test if api responds with 400 for invalid data (Required parameter missing)",
         "status": "Failed",
         "weight": 1
-    },
-
-
+    
     "test_13": {
-        "description": "Test to check if api responds with 400 for invalid course data 
-        (Required parameter missing)",
+        "description": "Test to check if api responds with 400 for invalid course data (Required parameter missing)",
         "status": "Failed",
         "weight": 1
     },
-
-    "test_21": {
-        "description": "Test to check if API is able to create an enrollment between student and course(returns 201 status code)",
-        "status": "Failed",
-        "weight": 1
+  
     },
-
-    "test_26": {
-        "description": "Test to check if API returns 404 for non-existent enrollment",
-        "status": "Failed",
-        "weight": 1
-    },
-    "final_score": 80.77
+    "final_score": 92.31
 }
