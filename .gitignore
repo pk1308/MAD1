@@ -163,3 +163,4 @@ MAD 1 report.pdf
 
 .trunk/*
 .idea/*
+.vscode/settings.json

@@ -10,17 +10,12 @@ course_parser.add_argument("course_id", type=int, help=" course id")
 course_put_parser = reqparse.RequestParser()
 course_put_parser.add_argument("course_name", type=str, help="Enter course Name")
 course_put_parser.add_argument("course_code", type=str, help="Enter course Code")
-course_put_parser.add_argument(
-    "course_description", type=str, help="Enter course Description"
-)
+course_put_parser.add_argument( "course_description", type=str, help="Enter course Description")
 
 # course.post
 course_post_parser = reqparse.RequestParser()
-course_post_parser.add_argument(
-    "course_name", type=str, help="Enter course Name", required=True
-)
-course_post_parser.add_argument(
-    "course_code", type=str, help="Enter course Code", required=True
+course_post_parser.add_argument("course_name", type=str, help="Enter course Name", required=True)
+course_post_parser.add_argument( "course_code", type=str, help="Enter course Code", required=True
 )
 course_post_parser.add_argument(
     "course_description", type=str, help="Enter course Description", required=True
@@ -58,7 +53,7 @@ class CourseId(Resource):
 
     def put(self, course_id: int):
         try:
-            args = course_put_parser.parse_args()
+            args = course_put_parser.parse_args(http_error_code=400)
 
             # Check for missing course_code
             if not args["course_code"]:
@@ -97,7 +92,7 @@ class CourseId(Resource):
 
     def post(self):
         try:
-            args = course_post_parser.parse_args()
+            args = course_post_parser.parse_args(http_error_code=400)
 
            # Check for missing course_code
             if not args["course_code"]:
@@ -140,7 +135,7 @@ class StudentId(Resource):
 
     def put(self, student_id):
         try:
-            args = student_post_parser.parse_args()
+            args = student_post_parser.parse_args(http_error_code=400)
             # Check for missing roll_number
             if not args["roll_number"]:
                 return {"error_code": "STUDENT001", "error_message": "Roll Number required"} , 400
@@ -180,7 +175,7 @@ class StudentId(Resource):
 
     def post(self):
         try:
-            args = student_post_parser.parse_args()
+            args = student_post_parser.parse_args(http_error_code=400)
              # Check for missing roll_number
             if not args["roll_number"]:
                 return {"error_code": "STUDENT001", "error_message": "Roll Number required"} , 400
@@ -227,7 +222,7 @@ class CourseNStudent(Resource):
           abort(500)
     def post(self, student_id):
       try:
-          args = enroll_post.parse_args()
+          args = enroll_post.parse_args(http_error_code=400)
           course_id = args["course_id"]
           student_data = student.query.filter_by(student_id=student_id).first()
           if not student_data:

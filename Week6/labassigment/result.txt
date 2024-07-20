@@ -1,9 +1,4 @@
 
-a. Test 3: The API doesn't respond with a 400 error for invalid data (missing required parameters) when creating a student resource.
-
-b. Test 13: The API doesn't respond with a 400 error for invalid data (missing required parameters) when creating a course resource.
-
-c. Test 26: The API doesn't return a 404 error for non-existent enrollments.
 
     "test_3": {
         "description": "Test if api responds with 400 for invalid data (Required parameter missing)",
@@ -17,5 +12,3 @@ c. Test 26: The API doesn't return a 404 error for non-existent enrollments.
     },
   
     },
-    "final_score": 92.31
-}
