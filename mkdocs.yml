@@ -24,11 +24,23 @@ nav:
   - week2/activity_session_.md
   - week2/aq_pq.md
   - week2/Week 2_annotated.md
+- week7:
+  - week7/Data Search.md
+  - week7/SQL vs. NoSQL.md
+  - week7/Database Search.md
+  - week7/WebApplicationSecurity.md
+  - week7/Backend Systems.md
+  - week7/Scaling Strategies.md
 - week4:
   - week4/sql.md
   - week4/Mechanisms for Persistent Storage and Relational Databases.md
   - week4/Presistent Storage.md
   - week4/Relations and ER Diagram.md
+- Week8:
+  - Week8/Week 8-22-34.md
+  - Week8/Week 8-14-21.md
+  - Week8/Week 8-35-48.md
+  - Week8/Frontends.md
 - reference:
   - reference/embeding.md
 - week 5:
