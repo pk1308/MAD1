@@ -4,13 +4,14 @@ from flask import Flask, make_response
 from flask_restful import Api, Resource, fields, marshal_with, reqparse
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.exceptions import HTTPException
+from flask_cors import CORS
 
 # --------------------  Initialization  --------------------
 db = SQLAlchemy()
 
 app = Flask(__name__, template_folder="templates")
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///api_database.sqlite3"
-
+CORS(app)
 db.init_app(app)
 api = Api(app)
 app.app_context().push()
