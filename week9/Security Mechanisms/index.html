@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>Security Mechanisms - MAD1</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        <meta name="author" content="PK">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">MAD1</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                    Home
+                </a>
+                <div class="collapse" id="home-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../.."
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Index
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Flask/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Flask
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../css/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Css
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week3-collapse" aria-expanded="false">
+                    week3
+                </a>
+                <div class="collapse" id="week3-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week3/Week%203_annotated/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 3
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week3/heuristics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nielsen Norman Group's Ten Usability Heuristics
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week3/Accessibility/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Web Accessibility Initiative (WAI)
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week-6-collapse" aria-expanded="false">
+                    Week 6
+                </a>
+                <div class="collapse" id="week-6-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%206/Rest_lec6_2/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Rest lec6 2
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%206/openapi/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Openapi
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%206/Week%206-53-70/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 6-53-70.pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%206/apidesign/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 6
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week1-collapse" aria-expanded="false">
+                    week1
+                </a>
+                <div class="collapse" id="week1-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week1/pq_session/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pq session
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week1/Week%201_annotated/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 1_annotated.pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week1/week_activity1/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week activity1
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#arifacts-collapse" aria-expanded="false">
+                    arifacts
+                </a>
+                <div class="collapse" id="arifacts-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../arifacts/1/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            1
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../arifacts/viva/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            viva.pdf (PDF file)
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week2-collapse" aria-expanded="false">
+                    week2
+                </a>
+                <div class="collapse" id="week2-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week2/activity_session_/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Activity session 
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week2/aq_pq/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Aq pq
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week2/Week%202_annotated/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 2_annotated.pdf (PDF file)
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week7-collapse" aria-expanded="false">
+                    week7
+                </a>
+                <div class="collapse" id="week7-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week7/Data%20Search/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Data Search
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week7/SQL%20vs.%20NoSQL/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            SQL vs. NoSQL
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week7/Database%20Search/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Database Search
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week7/WebApplicationSecurity/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Web Application Security
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week7/Backend%20Systems/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Backend Systems
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week7/Scaling%20Strategies/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Scaling Strategies
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week4-collapse" aria-expanded="false">
+                    week4
+                </a>
+                <div class="collapse" id="week4-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week4/sql/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            SQL
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week4/Mechanisms%20for%20Persistent%20Storage%20and%20Relational%20Databases/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mechanisms for Persistent Storage and Relational Databases
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week4/Presistent%20Storage/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Presistent Storage
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week4/Relations%20and%20ER%20Diagram/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Relations and ER Diagram
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week8-collapse" aria-expanded="false">
+                    Week8
+                </a>
+                <div class="collapse" id="week8-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week8/Week%208-22-34/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 8-22-34.pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week8/Week%208-14-21/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 8-14-21.pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week8/Week%208-35-48/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 8-35-48.pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week8/Frontends/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Frontends
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#reference-collapse" aria-expanded="false">
+                    reference
+                </a>
+                <div class="collapse" id="reference-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../reference/embeding/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Embeding
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week-5-collapse" aria-expanded="false">
+                    week 5
+                </a>
+                <div class="collapse" id="week-5-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week%205/route/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Routes
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week%205/mvc/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            MVC
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../week%205/crud/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CRUD
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                            
+                                <div class="md-source source-detail">
+    <div class="md-source-repo-icon">
+        <i class="fa fa-github-alt drac-text-white" aria-hidden="true"></i>
+    </div>
+
+    <div class="md-source-repo-url">
+        <a href="https://github.com/pk1308/MAD1"
+            class="md-source drac-anchor drac-text drac-text-white drac-text-cyan-green--hover">
+            pk1308/MAD1
+        </a>
+
+        <ul class="md-source-repo-text">
+            <li>
+                <i class="fa fa-tag drac-text-black" aria-hidden="true"></i>
+                <img alt="GitHub tag (latest by date)"
+                    src="https://img.shields.io/github/v/tag/pk1308/MAD1?color=white&label=%20&style=flat-square">
+            </li>
+
+            <li>
+                <i class="fa fa-star drac-text-black" aria-hidden="true"></i>
+                <img alt="GitHub Repo stars"
+                    src="https://img.shields.io/github/stars/pk1308/MAD1?color=white&label=%20&style=flat-square">
+            </li>
+
+            <li>
+                <i class="fa fa-code-fork drac-text-black" aria-hidden="true"></i>
+                <img alt="GitHub forks"
+                    src="https://img.shields.io/github/forks/pk1308/MAD1?color=white&label=%20&style=flat-square">
+            </li>
+        </ul>
+    </div>
+
+</div>
+                            
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><div><h1 id="security-mechanisms">Security Mechanisms</h1>
+<h1 id="summary"><strong>Summary</strong></h1>
+<p><strong>Security Mechanisms for the Web</strong></p>
+<p>The internet has revolutionized the way we communicate, access information, and conduct business. However, with this convenience comes the risk of unauthorized access, data breaches, and other security threats. Web security is paramount in protecting sensitive information, maintaining data integrity, and ensuring user privacy. Numerous security mechanisms have been developed to safeguard web applications and data from malicious actors.</p>
+<p><strong>Types of Security Checks</strong></p>
+<p>Web security measures can be broadly classified into the following categories:</p>
+<ul>
+<li><strong>Obscurity:</strong> Concealing sensitive information or system components from public view. This approach is generally not recommended as it provides minimal security and can be easily bypassed by attackers.</li>
+<li><strong>Address:</strong> Controlling access based on the origin of requests. Host-based access controls allow administrators to specify which IP addresses or networks are granted access to a particular resource.</li>
+<li><strong>Login:</strong> Requiring users to provide credentials (username and password) to authenticate their identity. This is a common approach for protecting sensitive areas of a website or application.</li>
+<li><strong>Tokens:</strong> Using unique, difficult-to-reproduce access tokens for authentication. Tokens can be used for machine-to-machine authentication without requiring passwords.</li>
+</ul>
+<p><strong>HTTP Authentication</strong></p>
+<p>HTTP (Hypertext Transfer Protocol) is the foundation of web communication. It employs several authentication mechanisms to protect against unauthorized access:</p>
+<ul>
+<li><strong>Basic HTTP Auth:</strong> Enforced by the server, it requires clients to provide a username and password in each request. While convenient, basic HTTP auth transmits credentials in plain text, making it vulnerable to eavesdropping.</li>
+<li><strong>Digest Authentication:</strong> A more secure alternative, digest authentication uses a cryptographic function (message digest) to protect passwords. The server generates a nonce (a random value) to prevent spoofing, and the client creates a secret value incorporating the nonce. Both the server and client compute the same response value, ensuring that the client possesses the correct password without revealing it in plain text.</li>
+</ul>
+<p><strong>Client Certificates</strong></p>
+<p>Client certificates provide a higher level of security by using digital certificates to verify the identity of clients. These certificates are cryptographically secure and require clients to prove their knowledge of a private key associated with the certificate.</p>
+<p><strong>Form Input</strong></p>
+<p>Web forms are often used to collect user information, including sensitive data such as usernames and passwords. To protect this data, it is crucial to use secure links (HTTPS) and appropriate request methods:</p>
+<ul>
+<li><strong>GET Requests:</strong> URL-encoded data in GET requests is visible in the browser's address bar, making it insecure for sensitive information.</li>
+<li><strong>POST Requests:</strong> Form multipart data in POST requests is slightly more secure, but still requires a secure link to prevent data leakage.</li>
+</ul>
+<p><strong>Request Level Security</strong></p>
+<p>Web applications often involve multiple requests and responses. Security measures can be applied at the request level:</p>
+<ul>
+<li><strong>Connection KeepAlive:</strong> If a TCP connection is kept alive, subsequent requests can reuse the same connection, eliminating the need for repeated authentication.</li>
+<li><strong>Cookies:</strong> Cookies are small pieces of data stored on the client's computer. They contain information about the user's session, such as login credentials or preferences. Cookies can be used to maintain sessions and provide personalized experiences. However, they also raise privacy concerns and must be used responsibly.</li>
+</ul>
+<p><strong>API Security</strong></p>
+<p>Application Programming Interfaces (APIs) are used to connect different applications and exchange data. API security is essential to protect against unauthorized access and data breaches:</p>
+<ul>
+<li><strong>Tokens/API Keys:</strong> APIs often use tokens or API keys for authentication. These credentials should be treated with the same level of care as passwords and protected from unauthorized use.</li>
+</ul>
+<p><strong>Additional Security Considerations</strong></p>
+<p>In addition to the mechanisms discussed above, several other practices contribute to web security:</p>
+<ul>
+<li><strong>HTTPS (SSL/TLS):</strong> Encrypts communication between the client and server, protecting data from eavesdropping and man-in-the-middle attacks.</li>
+<li><strong>Cross-Site Request Forgery (CSRF) Protection:</strong> Prevents attackers from tricking users into performing unwanted actions on websites they are logged into.</li>
+<li><strong>Content Security Policy (CSP):</strong> Restricts the types of content that a website can load, preventing malicious scripts or content from being executed.</li>
+<li><strong>Vulnerability Management:</strong> Regular scanning and patching of web applications and servers to identify and address security vulnerabilities.</li>
+</ul>
+<p><strong>Conclusion</strong></p>
+<p>Web security is a multifaceted discipline that requires a comprehensive approach to protect against various threats. By understanding and implementing appropriate security mechanisms, organizations can safeguard their web applications, data, and users from unauthorized access, data breaches, and other malicious activities. Continuous monitoring, vulnerability management, and adherence to best practices are essential for maintaining a secure web environment.</p></div></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../javascripts/mathjax.js" defer></script>
+			<script src="https://polyfill.io/v3/polyfill.min.js" defer></script>
+			<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+			<script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>
