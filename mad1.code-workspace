@@ -5,10 +5,9 @@
 		},
 		{
 			"path": "../../MAD-I"
-		},
-		{
-			"path": "../azservice"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MAD1"
+	}
 }
