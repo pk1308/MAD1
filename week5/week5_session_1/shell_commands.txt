@@ -1,0 +1,41 @@
+G:\My_Work\AppDev_Sept2024\MAD I\week5>python
+Python 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from app import *
+
+>>> db.create_all()  --> creates database
+
+Create a new entry in database:
+>>> user_1 = User(username = "mad1", password = "12345")
+>>> db.session.add(user_1)
+>>> db.session.commit()
+
+Retrive an entry from the database using primary key 
+>>> user_1 = User.query.get(2)
+>>> user_1
+<User 2>
+>>> user_1.username           
+'biswas'
+>>> user_1.password 
+'12345'
+
+Retrive an entry from the database using any other attribute
+
+>>> user_2
+<User 1>  ---> retrieves object
+>>> user_2.username
+'adarsh'
+
+>>> user_3 = User.query.filter_by(username = "adarsh").all()  
+>>> user_3
+[<User 1>] ---> retrieves list of objects
+
+Update an attribute of an entry
+>>> user_1.password = "54321"
+>>> db.session.commit()
+
+
+Update an attribute of an entry
+>>> user_4 = User.query.filter_by(username = "adarsh").first()
+>>> db.session.delete(user_4)
+>>> db.session.commit()
