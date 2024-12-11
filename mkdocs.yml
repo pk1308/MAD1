@@ -1,52 +1,62 @@
 site_name: MAD1
 nav:
 - Home:
-  - index.md
-  - Flask.md
   - css.md
-- week3:
-  - week3/Week 3_annotated.md
-  - week3/heuristics.md
-  - week3/Accessibility.md
+  - Flask.md
+  - index.md
+- arifacts:
+  - arifacts/1.md
+  - arifacts/viva.md
+- reference:
+  - reference/embeding.md
+- week 5:
+  - week 5/crud.md
+  - week 5/mvc.md
+  - week 5/route.md
 - Week 6:
-  - Week 6/Rest_lec6_2.md
-  - Week 6/openapi.md
-  - Week 6/Week 6-53-70.md
   - Week 6/apidesign.md
+  - Week 6/json.md
+  - Week 6/openapi.md
+  - Week 6/Rest_lec6_2.md
+  - Week 6/Week 6-53-70.md
 - week1:
   - week1/pq_session.md
   - week1/Week 1_annotated.md
   - week1/week_activity1.md
-- arifacts:
-  - arifacts/1.md
-  - arifacts/viva.md
 - week2:
   - week2/activity_session_.md
   - week2/aq_pq.md
   - week2/Week 2_annotated.md
-- week7:
-  - week7/Data Search.md
-  - week7/SQL vs. NoSQL.md
-  - week7/Database Search.md
-  - week7/WebApplicationSecurity.md
-  - week7/Backend Systems.md
-  - week7/Scaling Strategies.md
+- week3:
+  - week3/Accessibility.md
+  - week3/heuristics.md
+  - week3/Week 3_annotated.md
 - week4:
-  - week4/sql.md
   - week4/Mechanisms for Persistent Storage and Relational Databases.md
   - week4/Presistent Storage.md
   - week4/Relations and ER Diagram.md
+  - week4/sql.md
+- week7:
+  - week7/Backend Systems.md
+  - week7/cors.md
+  - week7/Data Search.md
+  - week7/Database Search.md
+  - week7/Scaling Strategies.md
+  - week7/SQL vs. NoSQL.md
+  - week7/WebApplicationSecurity.md
 - Week8:
-  - Week8/Week 8-22-34.md
-  - Week8/Week 8-14-21.md
-  - Week8/Week 8-35-48.md
   - Week8/Frontends.md
-- reference:
-  - reference/embeding.md
-- week 5:
-  - week 5/route.md
-  - week 5/mvc.md
-  - week 5/crud.md
+  - Week8/Week 8-14-21.md
+  - Week8/Week 8-22-34.md
+  - Week8/Week 8-35-48.md
+- week9:
+  - week9/Security Mechanisms.md
+  - week9/Security.md
+  - week9/Week 9-1-22.md
+  - week9/Week 9-23-37.md
+  - week9/Week 9-38-48.md
+  - week9/Week 9-49-57.md
+  - week9/Week 9-58-66.md
 site_author: PK
 site_description: DESCRIPTION
 repo_name: pk1308/MAD1

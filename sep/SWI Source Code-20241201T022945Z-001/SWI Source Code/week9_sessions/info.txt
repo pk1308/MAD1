@@ -1,0 +1,28 @@
+# encrypt({
+#     "username": "Adarsh",
+#     "password": "12345"
+# })
+
+#secret_key
+# = eyhk;jbwvjwbdvowvonwovnowvnwbjcnowkcniwcjpm
+
+# secret_key EXOR 
+# user credentials                secretkey
+# 11111100101010101010 EXOR 111101010101010100101010 
+# = 11110101010100101010101 (encrypted userinfo --> random)
+# = cookies
+
+# abc["username"] = "Adarsh"
+
+# why session?
+
+# 1. it stores user credentials in an iencrypted form
+# 2. it is accessible to all the endpoints of that application
+
+# different string on every login
+# eyJwYXNzd29yZCI6IjEyMzQ1IiwidXNlcm5hbWUiOiJBZGFyc2gifQ.Zz3pqA.7Z4_hlru_KGgEY-xyHnakAuF6_A
+# eyJwYXNzd29yZCI6IjEyMzQ1IiwidXNlcm5hbWUiOiJBZGFyc2gifQ.Zz3rRw.9D0lB9j3XE6upSqh1r3g53QjKuw
+
+
+for flask-login
+https://www.youtube.com/live/Wr_2o4RvnkY?si=CR5zhVq8AE6HkVr4
