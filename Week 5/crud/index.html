@@ -1,0 +1,926 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>CRUD - MAD1</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        <meta name="author" content="PK">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">MAD1</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                    Home
+                </a>
+                <div class="collapse" id="home-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../css/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Css
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Flask/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Flask
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../.."
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Index
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#arifacts-collapse" aria-expanded="false">
+                    arifacts
+                </a>
+                <div class="collapse" id="arifacts-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../arifacts/1/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            1
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../arifacts/viva/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            viva.pdf (PDF file)
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#reference-collapse" aria-expanded="false">
+                    reference
+                </a>
+                <div class="collapse" id="reference-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../reference/embeding/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Embeding
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week-1-collapse" aria-expanded="false">
+                    Week 1
+                </a>
+                <div class="collapse" id="week-1-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%201/pq_session/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Pq session
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%201/Week%201_annotated/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 1_annotated.pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%201/week_activity1/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week activity1
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week-10-collapse" aria-expanded="false">
+                    Week 10
+                </a>
+                <div class="collapse" id="week-10-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%2010/Week%2010%20%5B1-16%5D/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 10 [1-16].pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%2010/Week%2010%20%5B17-31%5D/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 10 [17-31].pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%2010/Week%2010%20%5B32-42%5D/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 10 [32-42].pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%2010/Week%2010%20%5B43-60%5D/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 10 [43-60].pdf (PDF file)
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week-11-collapse" aria-expanded="false">
+                    Week 11
+                </a>
+                <div class="collapse" id="week-11-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%2011/Week%2011%20%5B1-13%5D/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 11 [1-13].pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%2011/Week%2011%20%5B14-23%5D/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 11 [14-23].pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%2011/Week%2011%20%5B24-28%5D/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 11 [24-28].pdf (PDF file)
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week-12-collapse" aria-expanded="false">
+                    Week 12
+                </a>
+                <div class="collapse" id="week-12-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%2012/Week%2012%20%5B1-20%5D/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 12 [1-20].pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%2012/Week%2012%20%5B21-29%5D/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 12 [21-29].pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%2012/Week%2012%20%5B30-43%5D/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 12 [30-43].pdf (PDF file)
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week-2-collapse" aria-expanded="false">
+                    Week 2
+                </a>
+                <div class="collapse" id="week-2-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%202/activity_session_/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Activity session 
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%202/aq_pq/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Aq pq
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%202/Week%202_annotated/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 2_annotated.pdf (PDF file)
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week-3-collapse" aria-expanded="false">
+                    Week 3
+                </a>
+                <div class="collapse" id="week-3-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%203/Accessibility/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Web Accessibility Initiative (WAI)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%203/heuristics/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Nielsen Norman Group's Ten Usability Heuristics
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%203/Week%203_annotated/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 3
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week-4-collapse" aria-expanded="false">
+                    Week 4
+                </a>
+                <div class="collapse" id="week-4-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%204/Mechanisms%20for%20Persistent%20Storage%20and%20Relational%20Databases/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Mechanisms for Persistent Storage and Relational Databases
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%204/Presistent%20Storage/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Presistent Storage
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%204/Relations%20and%20ER%20Diagram/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Relations and ER Diagram
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%204/sql/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            SQL
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week-5-collapse" aria-expanded="false">
+                    Week 5
+                </a>
+                <div class="collapse" id="week-5-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            CRUD
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../mvc/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            MVC
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../route/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Routes
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week-6-collapse" aria-expanded="false">
+                    Week 6
+                </a>
+                <div class="collapse" id="week-6-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%206/apidesign/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 6
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%206/json/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Json
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%206/openapi/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Openapi
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%206/Rest_lec6_2/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Rest lec6 2
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%206/Week%206-53-70/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 6-53-70.pdf (PDF file)
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week-7-collapse" aria-expanded="false">
+                    Week 7
+                </a>
+                <div class="collapse" id="week-7-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%207/Backend%20Systems/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Backend Systems
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%207/cors/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Cors
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%207/Data%20Search/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Data Search
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%207/Database%20Search/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Database Search
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%207/Scaling%20Strategies/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Scaling Strategies
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%207/SQL%20vs.%20NoSQL/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            SQL vs. NoSQL
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%207/WebApplicationSecurity/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Web Application Security
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week-8-collapse" aria-expanded="false">
+                    Week 8
+                </a>
+                <div class="collapse" id="week-8-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%208/Frontends/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Frontends
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%208/Week%208-14-21/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 8-14-21.pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%208/Week%208-22-34/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 8-22-34.pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%208/Week%208-35-48/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 8-35-48.pdf (PDF file)
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#week-9-collapse" aria-expanded="false">
+                    Week 9
+                </a>
+                <div class="collapse" id="week-9-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%209/Security%20Mechanisms/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Security Mechanisms
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%209/Security/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Security
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%209/Week%209-1-22/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 9-1-22.pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%209/Week%209-23-37/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 9-23-37.pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%209/Week%209-38-48/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 9-38-48.pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%209/Week%209-49-57/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 9-49-57.pdf (PDF file)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../Week%209/Week%209-58-66/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Week 9-58-66.pdf (PDF file)
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../../Week%204/sql/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../mvc/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                            
+                                <div class="md-source source-detail">
+    <div class="md-source-repo-icon">
+        <i class="fa fa-github-alt drac-text-white" aria-hidden="true"></i>
+    </div>
+
+    <div class="md-source-repo-url">
+        <a href="https://github.com/pk1308/MAD1"
+            class="md-source drac-anchor drac-text drac-text-white drac-text-cyan-green--hover">
+            pk1308/MAD1
+        </a>
+
+        <ul class="md-source-repo-text">
+            <li>
+                <i class="fa fa-tag drac-text-black" aria-hidden="true"></i>
+                <img alt="GitHub tag (latest by date)"
+                    src="https://img.shields.io/github/v/tag/pk1308/MAD1?color=white&label=%20&style=flat-square">
+            </li>
+
+            <li>
+                <i class="fa fa-star drac-text-black" aria-hidden="true"></i>
+                <img alt="GitHub Repo stars"
+                    src="https://img.shields.io/github/stars/pk1308/MAD1?color=white&label=%20&style=flat-square">
+            </li>
+
+            <li>
+                <i class="fa fa-code-fork drac-text-black" aria-hidden="true"></i>
+                <img alt="GitHub forks"
+                    src="https://img.shields.io/github/forks/pk1308/MAD1?color=white&label=%20&style=flat-square">
+            </li>
+        </ul>
+    </div>
+
+</div>
+                            
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><div><h1 id="crud">CRUD</h1>
+<p><strong>Summary</strong>
+<strong>CRUD Operations</strong></p>
+<p>CRUD (Create-Read-Update-Delete) is a fundamental concept in database operations. It encompasses the essential operations performed on data:</p>
+<p><strong>Create:</strong></p>
+<ul>
+<li>Adds a new entry to the database.</li>
+<li>Ensures that the entry does not already exist.</li>
+<li>Checks within the database to avoid conflicts.</li>
+<li>Considers mandatory and optional fields.</li>
+</ul>
+<p><strong>Read:</strong></p>
+<ul>
+<li>Retrieves data from the database.</li>
+<li>Can involve summarizing data, such as counts, distributions, or histograms.</li>
+</ul>
+<p><strong>Update:</strong></p>
+<ul>
+<li>Modifies existing data in the database.</li>
+<li>Can involve changing values, addresses, or dates.</li>
+</ul>
+<p><strong>Delete:</strong></p>
+<ul>
+<li>Removes data from the database.</li>
+<li>Can be used to remove completed records or correct errors.</li>
+</ul>
+<p><strong>API (Application Programming Interface)</strong></p>
+<p>An API provides a standardized method for interacting with a server. It allows clients to access server functionality without knowing the underlying implementation. CRUD operations form a basic set of functionality for many APIs, particularly in the context of web applications.</p>
+<p><strong>Controllers</strong></p>
+<p>Controllers group related actions logically. Actions represent specific operations, while controllers organize those actions into meaningful categories. This separation allows for flexible and maintainable code.</p>
+<p><strong>Separation of Concerns</strong></p>
+<p>MVC (Model-View-Controller) is a design pattern that promotes the separation of concerns between different components of an application:</p>
+<ul>
+<li><strong>Models:</strong> Represent the data and its behavior.</li>
+<li><strong>Views:</strong> Display the data to users.</li>
+<li><strong>Controllers:</strong> Process user input and interact with models.</li>
+</ul>
+<p>This separation allows for flexibility and maintainability, as different components can be modified independently.</p>
+<p><strong>Rules of Thumb</strong></p>
+<ul>
+<li>Views and controllers should be independent of the model.</li>
+<li>Controllers should not directly interact with databases.</li>
+<li>In practice, views and controllers often have close interdependencies.</li>
+</ul>
+<p><strong>HTTP Verbs</strong></p>
+<p>HTTP verbs convey different meanings in API interactions:</p>
+<ul>
+<li>GET: Retrieve data</li>
+<li>POST: Create new data</li>
+<li>PUT: Update existing data</li>
+<li>DELETE: Remove data</li>
+</ul>
+<p>Understanding these concepts is crucial for designing and implementing efficient and user-friendly web applications.</p>
+<p>usage of the "enctype" attribute in HTML forms:</p>
+<p>The "enctype" attribute can be used with HTML form elements regardless of the request method (GET or POST). However, its practical application and effect are most relevant when the form method is POST. Here's a more detailed explanation:</p>
+<ol>
+<li>Usage with POST method:
+   When the form method is POST, the "enctype" attribute specifies how the form data should be encoded before sending it to the server. There are three possible values for "enctype" with POST:</li>
+</ol>
+<p>a) application/x-www-form-urlencoded (default)
+   b) multipart/form-data
+   c) text/plain</p>
+<p>The "multipart/form-data" encoding is particularly important when uploading files through a form.
+2. Usage with GET method:
+   When the form method is GET, the "enctype" attribute is generally ignored by browsers. This is because GET requests send data as part of the URL query string, which has its own encoding rules.</p>
+<p>So, while you can technically include the "enctype" attribute in a form with method="GET", it won't have any practical effect on how the data is sent.</p>
+<p>Here's an example of a form using POST method with "enctype" specified:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">"/upload"</span> <span class="na">method</span><span class="o">=</span><span class="s">"POST"</span> <span class="na">enctype</span><span class="o">=</span><span class="s">"multipart/form-data"</span><span class="p">&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"file"</span> <span class="na">name</span><span class="o">=</span><span class="s">"fileUpload"</span><span class="p">&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"submit"</span> <span class="na">value</span><span class="o">=</span><span class="s">"Upload"</span><span class="p">&gt;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>In this case, the "enctype" attribute is crucial for proper file uploading.</p>
+<p>To summarize, while the "enctype" attribute is most relevant and commonly used with POST requests, it's not strictly limited to POST methods in terms of HTML syntax. It's just that its effect is only meaningful with POST requests.</p>
+<p>You're correct to highlight "application/x-www-form-urlencoded" as the default encoding type for HTML forms.its usage:</p>
+<ol>
+<li>Default Behavior:
+   When you don't specify an "enctype" attribute in your form, the browser automatically uses "application/x-www-form-urlencoded". This means you don't need to explicitly set it unless you want to use a different encoding type.</li>
+<li>Format:
+   With this encoding, form data is sent as name-value pairs. Each name-value pair is separated by an ampersand (&amp;), and spaces are replaced by plus signs (+). Special characters are percent-encoded.</li>
+<li>Example:
+   If you have a form with fields "name" and "age", the encoded data might look like this:</li>
+</ol>
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>name=John+Doe&amp;age=30
+</code></pre></div>
+4. Usage:
+   This encoding is suitable for most forms that don't involve file uploads. It's efficient for sending text data.
+5. Code Example:
+   Here's how you would explicitly set this encoding (though it's not necessary as it's the default):
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">"/submit"</span> <span class="na">method</span><span class="o">=</span><span class="s">"POST"</span> <span class="na">enctype</span><span class="o">=</span><span class="s">"application/x-www-form-urlencoded"</span><span class="p">&gt;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"text"</span> <span class="na">name</span><span class="o">=</span><span class="s">"username"</span><span class="p">&gt;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"password"</span> <span class="na">name</span><span class="o">=</span><span class="s">"password"</span><span class="p">&gt;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">"submit"</span> <span class="na">value</span><span class="o">=</span><span class="s">"Login"</span><span class="p">&gt;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</code></pre></div>
+6. Limitations:
+   While this encoding works well for most text data, it's not suitable for sending large amounts of data or for file uploads. In those cases, "multipart/form-data" is more appropriate.
+7. GET vs POST:
+   When using the GET method, form data is automatically encoded in the URL using this format, regardless of the "enctype" attribute.
+8. Server-side Handling:
+   Most server-side frameworks and languages have built-in support for parsing "application/x-www-form-urlencoded" data, making it easy to work with on the backend.
+<p>Understanding this default encoding type is crucial for web developers, as it affects how data is sent to the server and how it needs to be processed on the server side. It's particularly important when debugging form submissions or when working with APIs that expect data in this format.</p></div></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../javascripts/mathjax.js" defer></script>
+			<script src="https://polyfill.io/v3/polyfill.min.js" defer></script>
+			<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+			<script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>
