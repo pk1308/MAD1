@@ -9,6 +9,59 @@ nav:
   - arifacts/viva.md
 - reference:
   - reference/embeding.md
+- Week 1:
+  - Week 1/pq_session.md
+  - Week 1/Week 1_annotated.md
+  - Week 1/week_activity1.md
+- Week 2:
+  - Week 2/activity_session_.md
+  - Week 2/aq_pq.md
+  - Week 2/Week 2_annotated.md
+- Week 3:
+  - Week 3/Accessibility.md
+  - Week 3/heuristics.md
+  - Week 3/Week 3_annotated.md
+- Week 4:
+  - Week 4/Mechanisms for Persistent Storage and Relational Databases.md
+  - Week 4/Presistent Storage.md
+  - Week 4/Relations and ER Diagram.md
+  - Week 4/sql.md
+- Week 5:
+  - Week 5/crud.md
+  - Week 5/mvc.md
+  - Week 5/route.md
+- Week 6:
+  - Week 6/apidesign.md
+  - Week 6/json.md
+  - Week 6/openapi.md
+  - Week 6/Rest_lec6_2.md
+  - Week 6/Week 6-53-70.md
+- Week 7:
+  - Week 7/Backend Systems.md
+  - Week 7/cors.md
+  - Week 7/Data Search.md
+  - Week 7/Database Search.md
+  - Week 7/Scaling Strategies.md
+  - Week 7/SQL vs. NoSQL.md
+  - Week 7/WebApplicationSecurity.md
+- Week 8:
+  - Week 8/Frontends.md
+  - Week 8/Week 8-14-21.md
+  - Week 8/Week 8-22-34.md
+  - Week 8/Week 8-35-48.md
+- Week 9:
+  - Week 9/Security Mechanisms.md
+  - Week 9/Security.md
+  - Week 9/Week 9-1-22.md
+  - Week 9/Week 9-23-37.md
+  - Week 9/Week 9-38-48.md
+  - Week 9/Week 9-49-57.md
+  - Week 9/Week 9-58-66.md
+- Week 10:
+  - Week 10/Week 10 [1-16].md
+  - Week 10/Week 10 [17-31].md
+  - Week 10/Week 10 [32-42].md
+  - Week 10/Week 10 [43-60].md
 - Week 11:
   - Week 11/Week 11 [1-13].md
   - Week 11/Week 11 [14-23].md
@@ -17,59 +70,6 @@ nav:
   - Week 12/Week 12 [1-20].md
   - Week 12/Week 12 [21-29].md
   - Week 12/Week 12 [30-43].md
-- week 5:
-  - week 5/crud.md
-  - week 5/mvc.md
-  - week 5/route.md
-- Week 6:
-  - Week 6/apidesign.md
-  - Week 6/json.md
-  - Week 6/openapi.md
-  - Week 6/Rest_lec6_2.md
-  - Week 6/Week 6-53-70.md
-- week1:
-  - week1/pq_session.md
-  - week1/Week 1_annotated.md
-  - week1/week_activity1.md
-- week10:
-  - week10/Week 10 [1-16].md
-  - week10/Week 10 [17-31].md
-  - week10/Week 10 [32-42].md
-  - week10/Week 10 [43-60].md
-- week2:
-  - week2/activity_session_.md
-  - week2/aq_pq.md
-  - week2/Week 2_annotated.md
-- week3:
-  - week3/Accessibility.md
-  - week3/heuristics.md
-  - week3/Week 3_annotated.md
-- week4:
-  - week4/Mechanisms for Persistent Storage and Relational Databases.md
-  - week4/Presistent Storage.md
-  - week4/Relations and ER Diagram.md
-  - week4/sql.md
-- week7:
-  - week7/Backend Systems.md
-  - week7/cors.md
-  - week7/Data Search.md
-  - week7/Database Search.md
-  - week7/Scaling Strategies.md
-  - week7/SQL vs. NoSQL.md
-  - week7/WebApplicationSecurity.md
-- Week8:
-  - Week8/Frontends.md
-  - Week8/Week 8-14-21.md
-  - Week8/Week 8-22-34.md
-  - Week8/Week 8-35-48.md
-- week9:
-  - week9/Security Mechanisms.md
-  - week9/Security.md
-  - week9/Week 9-1-22.md
-  - week9/Week 9-23-37.md
-  - week9/Week 9-38-48.md
-  - week9/Week 9-49-57.md
-  - week9/Week 9-58-66.md
 site_author: PK
 site_description: DESCRIPTION
 repo_name: pk1308/MAD1
